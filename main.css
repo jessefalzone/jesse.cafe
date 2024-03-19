@@ -61,6 +61,18 @@ footer {
   padding: 1rem 0;
 }
 
+img {
+  box-shadow: 6px 6px 0px 1px var(--purple);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding: 1rem 0;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     --background-color: black;
