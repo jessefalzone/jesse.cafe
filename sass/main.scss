@@ -3,7 +3,7 @@
   --background-color: #fff;
   --font-color: #333333;
   --font-size: 1rem;
-  --font-family-mono: Menlo, Courier, monospace;
+  --font-family-mono: 'Andale Mono', Menlo, Courier, monospace;
   --purple: #7811ed;
 }
 
@@ -20,30 +20,28 @@ body {
 }
 
 #wrapper {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 a {
   color: inherit;
+  &:hover {
+    color: white;
+    background-color: var(--purple);
+  }
 }
 
-a:hover {
-  color: white;
-  background-color: var(--purple);
-}
-
-nav a {
-  text-align: right;
-  margin-left: 1rem;
-}
-
-header {
+#nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 3rem;
   margin-bottom: 1rem;
+  nav a {
+    text-align: right;
+    margin-left: 1rem;
+  }
 }
 
 main {
@@ -61,16 +59,12 @@ footer {
   padding: 1rem 0;
 }
 
+h1 {
+  font-size: 1.625rem;
+}
+
 img {
   box-shadow: 6px 6px 0px 1px var(--purple);
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  padding: 1rem 0;
 }
 
 @media (prefers-color-scheme: dark) {

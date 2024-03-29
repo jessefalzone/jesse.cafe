@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block title %}Tag - {{ term.name }}{% endblock title %}
+
+{% block links %}
+  <link rel="canonical" href="{{ current_url }}">
+{% endblock links %}
+
+{% block content %}
+  <main id="content">
+    <header>
+      <h1>Posts Tagged as "{{ term.name }}"</h1>
+    </header>
+    {% for page in term.pages %}
+    <p><a href="{{ page.permalink }}">{{ page.title }}</a></p>
+    {% endfor %}
+  </main>
+  {% endblock content %}

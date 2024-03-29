@@ -1,0 +1,13 @@
+{% extends "index.html" %} {# Override base title to use the page-specific
+title. #} {% block title %}Jesse Falzone - {{ page.title }}{% endblock title %}
+{# Override base links to use page-specific ones. #} {% block links %}
+<link rel="canonical" href="{{ page.permalink }}" />
+{% endblock links %} {# Override base content to use page-specific content. #}
+{% block content %}
+<main>
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  {{ page.content | safe }}
+</main>
+{% endblock content %}
