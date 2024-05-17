@@ -1,10 +1,21 @@
 :root {
-  /* --background-color: #eaf5ff; */
   --background-color: #fff;
   --font-color: #333333;
   --font-size: 1rem;
-  --font-family-mono: 'Andale Mono', Menlo, Courier, monospace;
+  --line-height: 1.4;
+  --font-family-mono: Menlo, Courier, monospace;
   --purple: #7811ed;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background-color: #282a36;
+    --purple: #cba6ff;
+    --font-color: #f8f8f2;
+    a:hover {
+      background-color: #44475a;
+    }
+  }
 }
 
 body {
@@ -14,6 +25,7 @@ body {
   background-color: var(--background-color);
   font-size: var(--font-size);
   font-family: var(--font-family-mono);
+  line-height: var(--line-height);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,7 +37,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--purple);
   &:hover {
     color: white;
     background-color: var(--purple);
@@ -67,9 +79,8 @@ img {
   box-shadow: 6px 6px 0px 1px var(--purple);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --background-color: black;
-    --font-color: #dcb;
-  }
+pre {
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1;
 }
