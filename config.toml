@@ -1,4 +1,4 @@
-base_url = "https://example.com"
+base_url = "https://jesse.cafe"
 compile_sass = true
 build_search_index = false
 minify_html = true
@@ -13,4 +13,4 @@ highlight_theme = "dracula"
 
 [extra]
 author = "Jesse Falzone"
-site_name = "jessefalzone.com"
+site_name = "jesse.cafe"
