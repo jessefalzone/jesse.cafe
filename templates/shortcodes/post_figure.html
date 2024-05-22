@@ -8,7 +8,11 @@ format="webp", quality=50) %}
 {% set image = resize_image(path=thePath, width=5000, height=5000, op="fit") %}
 <figure class="post-figure">
   <a href="{{ image.url }}">
-    <img src="{{ thumb.url }}" alt="{{ alt }}" title="{{ caption }}" />
+    <img src="{{ thumb.url }}"
+         alt="{{ alt }}"
+         title="{{ caption }}"
+         width="{{ thumb.width }}"
+         height="{{ thumb.height }}" />
   </a>
   <br>
   {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
