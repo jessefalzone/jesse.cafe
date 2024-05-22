@@ -2,7 +2,6 @@
 title = "About"
 description = "About me."
 draft = false
-insert_anchor_links = "left"
 +++
 
 {{ resize_image(path="/avatar.jpeg", alt="A picture of me.", width=150, height=150, op="scale") }}
@@ -15,7 +14,7 @@ insert_anchor_links = "left"
 - **Full-Stack Software Engineer** @ Critical Mention, 2014 - 2016
 - **Software Engineer Intern** @ Logikcull, 2013
 
-## Non-Work Stuff
+## Other Stuff
 
 I'm a curious person by nature so I have lots of interests. Here are a few:
 

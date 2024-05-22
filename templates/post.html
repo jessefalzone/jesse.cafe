@@ -6,7 +6,7 @@
     <article id="content">
       <header>
         <h1>{{ page.title }}</h1>
-        {{ subheader::meta(page=page) }}
+        <b>{{ subheader::meta(page=page) }}</b>
       </header>
       {{ page.content | safe }}
     </article>
