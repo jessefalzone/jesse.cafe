@@ -3,13 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="{{ config.extra.author }}">
+    {% block meta %}
+      <meta name="description" content="{{ section.description }}">
+      <meta property="og:site_name" content="{{ config.extra.site_name }}">
+      <meta property="og:locale" content="en-us">
+      <meta property="og:url" content="{{ section.permalink }}">
+      <meta property="og:title" content="{{ section.title }}">
+      <meta property="og:description" content="{{ section.description }}">
+      <meta property="og:type" content="profile">
+      <meta property="og:image" content="/favicon.png">
+    {% endblock meta %}
     <title>
-      {% block title %}Jesse Falzone - {{ section.title }}{% endblock title %}
+      {% block title %}
+        Jesse Falzone - {{ section.title }}
+      {% endblock title %}
     </title>
     <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     {% block links %}
-    <link rel="canonical" href="{{ section.permalink }}" />
+      <link rel="canonical" href="{{ section.permalink }}" />
     {% endblock links %}
   </head>
   <body>
@@ -17,7 +30,9 @@
       {% include "header.html" %}
       <hr />
       {% block content %}
-      <main>{{ section.content | safe }}</main>
+        <main>
+          {{ section.content | safe }}
+        </main>
       {% endblock content %}
       <hr />
       {% include "footer.html" %}

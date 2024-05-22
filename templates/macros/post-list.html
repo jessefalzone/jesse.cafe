@@ -1,0 +1,13 @@
+{% import "macros/post-subheader.html" as subheader %}
+{% macro meta(pages) %}
+  {% if pages | length == 0 %}<p>There's nothing here yet.</p>{% endif %}
+  <ul>
+    {% for page in pages %}
+      <li>
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+        <span>&nbsp;/</span>
+        {{ subheader::meta(page=page) }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro meta %}

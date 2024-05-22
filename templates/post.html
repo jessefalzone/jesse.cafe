@@ -1,12 +1,14 @@
 {% extends "page.html" %}
+{% import "macros/post-subheader.html" as subheader %}
 {% block content %}
-<main>
-  <a href="/blog">&larr; All posts</a>
-  <article id="content">
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-    {{ page.content | safe }}
-  </article>
-</main>
+  <main>
+    <a href="/blog">All Posts</a>
+    <article id="content">
+      <header>
+        <h1>{{ page.title }}</h1>
+        {{ subheader::meta(page=page) }}
+      </header>
+      {{ page.content | safe }}
+    </article>
+  </main>
 {% endblock content %}

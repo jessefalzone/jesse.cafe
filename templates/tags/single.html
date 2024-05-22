@@ -1,18 +1,32 @@
 {% extends "index.html" %}
-
-{% block title %}Tag - {{ term.name }}{% endblock title %}
-
+{% import "macros/post-list.html" as postList %}
+{% block meta %}
+  <meta name="description" content="Posts tagged as {{ term.name }}">
+  <meta property="og:site_name" content="{{ config.extra.site_name }}">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:url" content="{{ current_url }}">
+  <meta property="og:title" content="Tag: {{ term.name }}">
+  <meta property="og:description" content="Posts tagged as {{ term.name }}">
+  <meta property="og:image" content="/favicon.png">
+{% endblock meta %}
+{% block title %}
+  Jesse Falzone - Posts Tagged as "{{ term.name }}"
+{% endblock title %}
 {% block links %}
   <link rel="canonical" href="{{ current_url }}">
 {% endblock links %}
-
 {% block content %}
   <main id="content">
     <header>
       <h1>Posts Tagged as "{{ term.name }}"</h1>
+      <p>
+        <a href="/blog">All Posts</a>
+        {% set taxonomy = get_taxonomy(kind="tags") %}
+        {% if taxonomy.items | length > 0 %}
+          <span>/</span> <a href="/tags">All Tags</a>
+        </p>
+      {% endif %}
     </header>
-    {% for page in term.pages %}
-    <p><a href="{{ page.permalink }}">{{ page.title }}</a></p>
-    {% endfor %}
+    {{ postList::meta(pages=term.pages) }}
   </main>
-  {% endblock content %}
+{% endblock content %}

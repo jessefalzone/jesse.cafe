@@ -1,0 +1,22 @@
+{% if path is containing(page.components | first) %}
+  {% set thePath = path %}
+{% else %}
+  {% set thePath = page.components | concat(with = path) | join(sep = "/") %}
+{% endif %}
+{% set thumb = resize_image(path=thePath, width=400, height=10, op="fit_width") %}
+{% set image = resize_image(path=thePath, width=5000, height=5000, op="fit") %}
+<figure class="post-figure">
+  <a href="{{ image.url }}">
+    <img src="{{ thumb.url }}" alt="{{ alt }}" title="{{ caption }}" />
+  </a>
+  <br>
+  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+  /
+  {% if cite %}
+    {% if citelink %}
+      <cite>Credit: <a href="{{ citelink }}">{{ cite }}</a></cite>
+    {% else %}
+      <cite>Credit: {{ cite }}</cite>
+    {% endif %}
+  {% endif %}
+</figure>
