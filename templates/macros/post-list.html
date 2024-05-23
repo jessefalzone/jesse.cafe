@@ -5,7 +5,7 @@
     {% for page in pages %}
       <li>
         <a href="{{ page.permalink }}">{{ page.title }}</a>
-        <span>&nbsp;/</span>
+        <br>
         {{ subheader::meta(page=page) }}
       </li>
     {% endfor %}

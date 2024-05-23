@@ -71,7 +71,7 @@ footer {
   padding: 1rem 0;
   pre {
     font-family: Courier, monospace;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1;
   }
 }
@@ -102,11 +102,5 @@ blockquote {
   cite {
     display: inline;
     font-size: smaller;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  footer pre {
-    font-size: 0.6rem;
   }
 }
