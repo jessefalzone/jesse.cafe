@@ -69,16 +69,15 @@ hr {
 
 footer {
   padding: 1rem 0;
+  pre {
+    font-family: Courier, monospace;
+    font-size: 1rem;
+    line-height: 1;
+  }
 }
 
 img {
   box-shadow: 4px 4px 0px 1px var(--purple);
-}
-
-pre {
-  font-family: monospace;
-  font-size: 1rem;
-  line-height: 1;
 }
 
 blockquote {
@@ -106,25 +105,8 @@ blockquote {
   }
 }
 
-#wcb.carbonbadge {
-  --b1: var(--font-color) !important;
-  --b2: var(--purple) !important;
-  text-align: left !important;
-}
-
-#wcb #wcb_2,
-#wcb #wcb_a,
-#wcb #wcb_g {
-  font-family: var(--font-family-mono) !important;
-  background: none !important;
-}
-
-#wcb #wcb_a {
-  color: var(--purple) !important;
-  font-weight: normal !important;
-  border-color: var(--purple) !important;
-}
-
-#wcb.wcb-d #wcb_2 {
-  color: var(--font-color) !important;
+@media screen and (max-width: 767px) {
+  footer pre {
+    font-size: 0.6rem;
+  }
 }

@@ -1,14 +1,14 @@
 +++
 title = "Packard Bell Navigator or: A Tale of Two Living Rooms"
-date = 2024-05-21
-draft = true
+date = 2024-05-23
+draft = false
 description = "Fondly remembering Packard Bell Navigator, an alternative UI for Windows."
 
 [taxonomies]
-tags = ['the 90s', 'UI', 'skeuomorphism']
+tags = ['1990s', 'UI', 'skeuomorphism']
 +++
 
-Although I've been mostly avoiding OpenAI lately, I recently asked ChatGPT to
+Although I've been trying to avoid OpenAI lately, I recently asked ChatGPT to
 help recover my dwindling memory of a computer "game" that I used to play as a
 stupid little kid. I couldn't remember the name of it. All I knew was that it
 came installed (bloatware) on our old Packard Bell running Windows 95 and that
@@ -24,11 +24,12 @@ ChatGPT:
 Wrong!
 
 But I can see why it thought that. What I was actually looking for was Packard
-Bell Navigator 3.9, an alternative user interface for Windows meant to help a
-new user learn how to operate a GUI and launch programs. Apparently it was more
-intuitive to think of the operating system as a house. Want to send a fax? Then
-go into the virtual office and click the fax machine. Are you a kid? Go into the
-kid's room to look for a game to play. I don't recall there being a kitchen.
+Bell Navigator 3.9, an alternative Windows user interface from 1993 that was
+meant to help a novice learn how to operate the GUI and launch programs. The
+thought was that it would be more intuitive to think of the operating system as
+a house. Want to send a fax? Then go into the virtual office and click the fax
+machine. Are you a kid? Go into the kid's room to look for a game to play.
+Hungry? I don't recall there being a kitchen.
 
 {{ post_figure(
   path="navigator.png",
@@ -61,33 +62,30 @@ Just look at this mustard monstrosity:
 ) }}
 
 Microsoft, with all its anti-competitive prowess, apparently forced Packard Bell
-to ship with Bob instead of Navigator. Due to poor reception (gosh I wonder
-why?) they killed Bob altogether after less than a year.
+to ship with Bob instead of Navigator. Due to poor reception (gee I wonder why?)
+they killed Bob altogether after less than a year.
 
-## Time For My Rant
+## I Will End With a Rant
 
 I miss the approach to software that Navigator offered. I'll chalk some of it up
 to nostalgia and how every novel experience as a kid was the most incredible
-thing ever, but that doesn't explain all of it. There was a certain Fun Factor
-to that era of computing -- even in software aimed primarily at adults -- that I
-feel is missing nowadays. Why does every UI look basically the same? Where is
-the creativity?
+thing ever, but there was a certain Fun Factor to that era of computing -- even
+in software aimed primarily at adults -- that I feel is missing nowadays. Why
+does every UI look basically the same? Where is the creativity?
 
-Enter a design system like Material Design where the goal is to make the design
-process as fast a possible, at the expense of creativity and
-([arguably](https://news.ycombinator.com/item?id=22481602)) quality. It's the
+Enter a system like Material Design where the goal is to make the design process
+as fast a possible at the expense of creativity and,
+[arguably](https://news.ycombinator.com/item?id=22481602), quality. It's the
 same reason why over the last ten years humanity has [produced more
 plastic](https://plasticoceans.org/the-facts/) than the entire century before,
-or why Levi's jeans are now crap: we like cheap garbage. (More accurately,
+or why Levi's jeans are now crap: we like cheap junk. (More accurately,
 corporations have learned that they can make more money for their shareholders
-if they churn out junk. But I digress.)
-
-## Conclusion
+if they churn out garbage. But I digress.)
 
 Now that everyone knows how to use a computer we don't need metaphors for the
 physical world to help explain a UI, but that doesn't mean we _can't_ have them.
-Not to mention I often find flat, minimalist designs that are a nightmare to use
-(Where exactly do I click? Is this item selected?). Navigator, and even somewhat
-more recent products like iOS 6, embodied a sense of optimism that your computer
-could be an extension of the real world; its gizmos just happened to live in a
-virtual space. More on that some other time.
+Not to mention I often find flat, minimalist designs that are a nightmare to
+use. (Where exactly do I click? Is this item selected?) Navigator, and even
+somewhat more recent operating systems like iOS 6, had a quality of comfort and
+familiarity because they had realism and depth. For me, that's what generates
+nostalgia. Will anyone ever be nostalgic for Android 14 or iOS 17? We'll see.
