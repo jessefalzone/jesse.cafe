@@ -1,6 +1,6 @@
 :root {
   --background-color: #fff;
-  --font-color: #333333;
+  --font-color: #333;
   --font-size: 1rem;
   --line-height: 1.5;
   --font-family-mono: Menlo, Courier, monospace;
@@ -12,9 +12,9 @@
     --background-color: #282a36;
     --purple: #cba6ff;
     --font-color: #f8f8f2;
-    a:hover {
-      background-color: #44475a;
-    }
+  }
+  a:hover {
+    background-color: #44475a;
   }
 }
 

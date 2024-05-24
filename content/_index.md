@@ -9,4 +9,4 @@ I'm Jesse, a software engineer and former CTO with an interest in front-end web 
 
 I live in Massachusetts with my wife and dog.
 
-This site was built using [Zola](https://www.getzola.org/). [Say hi](@/contact.md) if you want.
+[Say hi](@/contact.md) if you want.

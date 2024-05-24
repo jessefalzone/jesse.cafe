@@ -1,7 +1,6 @@
 +++
 title = "About"
 description = "About me."
-draft = false
 +++
 
 {{ resize_image(path="/avatar.jpeg", alt="A picture of me.", width=150, height=150, op="scale") }}
