@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title></title>
+    <link rel="self" type="application/atom+xml" href="https://jesse.cafe/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://jesse.cafe"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-05-23T00:00:00+00:00</updated>
+    <id>https://jesse.cafe/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Packard Bell Navigator or: A Tale of Two Living Rooms</title>
+        <published>2024-05-23T00:00:00+00:00</published>
+        <updated>2024-05-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jesse.cafe/blog/packard-bell-navigator/"/>
+        <id>https://jesse.cafe/blog/packard-bell-navigator/</id>
+        
+        <content type="html" xml:base="https://jesse.cafe/blog/packard-bell-navigator/">&lt;p&gt;Although I&#x27;ve been trying to avoid OpenAI lately, I recently asked ChatGPT to
+help recover my dwindling memory of a computer &amp;quot;game&amp;quot; that I used to play as a
+stupid little kid. I couldn&#x27;t remember the name of it. All I knew was that it
+came installed (bloatware) on our old Packard Bell running Windows 95 and that
+it was a virtual house in which you could go to different rooms and open various
+programs and utilities.
+&lt;a href=&quot;https:&#x2F;&#x2F;www.interaction-design.org&#x2F;literature&#x2F;topics&#x2F;skeuomorphism&quot;&gt;Skeuomorphism&lt;&#x2F;a&gt;
+at its finest.&lt;&#x2F;p&gt;
+&lt;p&gt;ChatGPT:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It sounds like you&#x27;re describing Microsoft Bob!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Wrong!&lt;&#x2F;p&gt;
+&lt;p&gt;But I can see why it thought that. What I was actually looking for was Packard
+Bell Navigator 3.9, an alternative Windows user interface from 1993 that was
+meant to help a novice learn how to operate the GUI and launch programs. The
+thought was that it would be more intuitive to think of the operating system as
+a house. Want to send a fax? Then go into the virtual office and click the fax
+machine. Are you a kid? Go into the kid&#x27;s room to look for a game to play.
+Hungry? I don&#x27;t recall there being a kitchen.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;figure class=&quot;post-figure&quot;&gt;
+  &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;jesse.cafe&amp;#x2F;processed_images&amp;#x2F;navigator.0c3ad3c1d26a51b0.png&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jesse.cafe&amp;#x2F;processed_images&amp;#x2F;navigator.972f725a40e8da9e.webp&quot;
+         alt=&quot;Packard Bell Navigator&amp;#x27;s living room&quot;
+         title=&quot;Packard Bell Navigator&amp;#x27;s living room. Love these dithered graphics.&quot;
+         width=&quot;400&quot;
+         height=&quot;300&quot; &#x2F;&gt;
+  &lt;&#x2F;a&gt;
+  &lt;br&gt;
+  &lt;figcaption&gt;Packard Bell Navigator&amp;#x27;s living room. Love these dithered graphics.&lt;&#x2F;figcaption&gt;
+  &#x2F;
+  
+    
+      &lt;cite&gt;Credit: &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;winworldpc.com&amp;#x2F;product&amp;#x2F;packard-bell-navigator&amp;#x2F;39&quot;&gt;winworldpc.com&lt;&#x2F;a&gt;&lt;&#x2F;cite&gt;
+    
+  
+&lt;&#x2F;figure&gt;
+&lt;p&gt;How cool is this house? I would totally live there, especially in this housing
+market. The general consensus, from what I can tell, is that Navigator was not
+that fun to use, but I really loved it. I&#x27;d spend hours exploring the house and
+clicking on the Internet globe, unaware that we didn&#x27;t yet have an internet
+connection. It was a treat to go into the library and explore &lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;4hoGKOe2xyc?feature=shared&quot;&gt;Microsoft
+Encarta&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;microsoft-bob&quot;&gt;&lt;a href=&quot;#microsoft-bob&quot; aria-label=&quot;Anchor link for: microsoft-bob&quot;&gt;#&lt;&#x2F;a&gt;
+Microsoft Bob&lt;&#x2F;h2&gt;
+&lt;p&gt;Microsoft loved Navigator too -- so much so that they copied it, poorly, and
+released their own version called Microsoft Bob.&lt;&#x2F;p&gt;
+&lt;p&gt;Just look at this mustard monstrosity:&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;figure class=&quot;post-figure&quot;&gt;
+  &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;jesse.cafe&amp;#x2F;processed_images&amp;#x2F;bob.6d91966cbba7956d.jpg&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;jesse.cafe&amp;#x2F;processed_images&amp;#x2F;bob.c11fddf9089b3e7e.webp&quot;
+         alt=&quot;Microsoft Bob&amp;#x27;s living room&quot;
+         title=&quot;Microsoft Bob&amp;#x27;s living room.&quot;
+         width=&quot;400&quot;
+         height=&quot;300&quot; &#x2F;&gt;
+  &lt;&#x2F;a&gt;
+  &lt;br&gt;
+  &lt;figcaption&gt;Microsoft Bob&amp;#x27;s living room.&lt;&#x2F;figcaption&gt;
+  &#x2F;
+  
+    
+      &lt;cite&gt;Credit: &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;www.flickr.com&amp;#x2F;photos&amp;#x2F;programwitch&amp;#x2F;248234802&quot;&gt;K. Latham&lt;&#x2F;a&gt;&lt;&#x2F;cite&gt;
+    
+  
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Microsoft, with all its anti-competitive prowess, apparently forced Packard Bell
+to ship with Bob instead of Navigator. Due to poor reception (gee I wonder why?)
+they killed Bob altogether after less than a year.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;i-will-end-with-a-rant&quot;&gt;&lt;a href=&quot;#i-will-end-with-a-rant&quot; aria-label=&quot;Anchor link for: i-will-end-with-a-rant&quot;&gt;#&lt;&#x2F;a&gt;
+I Will End With a Rant&lt;&#x2F;h2&gt;
+&lt;p&gt;I miss the approach to software that Navigator offered. I&#x27;ll chalk some of it up
+to nostalgia and how every novel experience as a kid was the most incredible
+thing ever, but there was a certain Fun Factor to that era of computing -- even
+in software aimed primarily at adults -- that I feel is missing nowadays. Why
+does every UI look basically the same? Where is the creativity?&lt;&#x2F;p&gt;
+&lt;p&gt;Enter a system like Material Design where the goal is to make the design process
+as fast a possible at the expense of creativity and,
+&lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22481602&quot;&gt;arguably&lt;&#x2F;a&gt;, quality. It&#x27;s the
+same reason why over the last ten years humanity has &lt;a href=&quot;https:&#x2F;&#x2F;plasticoceans.org&#x2F;the-facts&#x2F;&quot;&gt;produced more
+plastic&lt;&#x2F;a&gt; than the entire century before,
+or why Levi&#x27;s jeans are now crap: we like cheap junk. (More accurately,
+corporations have learned that they can make more money for their shareholders
+if they churn out garbage. But I digress.)&lt;&#x2F;p&gt;
+&lt;p&gt;Now that everyone knows how to use a computer we don&#x27;t need metaphors for the
+physical world to help explain a UI, but that doesn&#x27;t mean we &lt;em&gt;can&#x27;t&lt;&#x2F;em&gt; have them.
+Not to mention I often find flat, minimalist designs that are a nightmare to
+use. (Where exactly do I click? Is this item selected?) Navigator, and even
+somewhat more recent operating systems like iOS 6, had a quality of comfort and
+familiarity because they had realism and depth. For me, that&#x27;s what generates
+nostalgia. Will anyone ever be nostalgic for Android 14 or iOS 17? We&#x27;ll see.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

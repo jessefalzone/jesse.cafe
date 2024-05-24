@@ -1,0 +1,11 @@
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: *
+Disallow:
+Allow: /
+
+Sitemap: https://jesse.cafe/sitemap.xml
