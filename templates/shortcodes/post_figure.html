@@ -12,7 +12,8 @@ format="webp", quality=50) %}
          alt="{{ alt }}"
          title="{{ caption }}"
          width="{{ thumb.width }}"
-         height="{{ thumb.height }}" />
+         height="{{ thumb.height }}"
+         loading="lazy" />
   </a>
   <br>
   {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
