@@ -5,7 +5,7 @@ draft = false
 description = "Fondly remembering Packard Bell Navigator, an alternative UI for Windows."
 
 [taxonomies]
-tags = ['1990s', 'UI', 'skeuomorphism']
+tags = ['windows 95', 'UI', 'skeuomorphism']
 +++
 
 Although I've been trying to avoid OpenAI lately, I recently asked ChatGPT to
@@ -26,7 +26,7 @@ Wrong!
 But I can see why it thought that. What I was actually looking for was Packard
 Bell Navigator 3.9, an alternative Windows user interface from 1993 that was
 meant to help a novice learn how to operate the GUI and launch programs. The
-thought was that it would be more intuitive to think of the operating system as
+idea was that it would be more intuitive to think of the operating system as
 a house. Want to send a fax? Then go into the virtual office and click the fax
 machine. Are you a kid? Go into the kid's room to look for a game to play.
 Hungry? I don't recall there being a kitchen.
@@ -87,5 +87,5 @@ physical world to help explain a UI, but that doesn't mean we _can't_ have them.
 Not to mention I often find flat, minimalist designs that are a nightmare to
 use. (Where exactly do I click? Is this item selected?) Navigator, and even
 somewhat more recent operating systems like iOS 6, had a quality of comfort and
-familiarity because they had realism and depth. For me, that's what generates
+familiarity because they had realism and depth. And that is what generates
 nostalgia. Will anyone ever be nostalgic for Android 14 or iOS 17? We'll see.
