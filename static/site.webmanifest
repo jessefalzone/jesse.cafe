@@ -14,5 +14,5 @@
     }
   ],
   "start_url": "https://jesse.cafe",
-  "display": "standalone"
+  "display": "browser"
 }

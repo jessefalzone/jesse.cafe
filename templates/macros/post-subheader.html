@@ -2,7 +2,7 @@
   <span>
     <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
     {% if page.taxonomies.tags %}
-      <span>/</span>
+      <span aria-hidden="true">/</span>
       {% for tag in page.taxonomies.tags %}
         <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">#{{ tag }}</a>
         {%- if page.taxonomies.tags | length > 1 and loop.index != page.taxonomies.tags | length -%},{% endif %}

@@ -23,7 +23,7 @@
         <a href="/blog">All Posts</a>
         {% set taxonomy = get_taxonomy(kind="tags") %}
         {% if taxonomy.items | length > 0 %}
-          <span>/</span> <a href="/tags">All Tags</a>
+          <span aria-hidden="true">/</span> <a href="/tags">All Tags</a>
         </p>
       {% endif %}
     </header>

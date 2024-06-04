@@ -8,12 +8,12 @@ description = "Fondly remembering Packard Bell Navigator, an alternative UI for 
 tags = ['windows 95', 'UI', 'skeuomorphism']
 +++
 
-Although I've been trying to avoid OpenAI lately, I recently asked ChatGPT to
-help recover my dwindling memory of a computer "game" that I used to play as a
-stupid little kid. I couldn't remember the name of it. All I knew was that it
-came installed (bloatware) on our old Packard Bell running Windows 95 and that
-it was a virtual house in which you could go to different rooms and open various
-programs and utilities.
+Although I've been trying to avoid OpenAI lately, I asked ChatGPT to help
+recover my dwindling memory of a computer "game" that I used to play as a stupid
+little kid. I couldn't remember the name of it but I knew that it came installed
+(bloatware) on our old Packard Bell running Windows 95, and that it was a
+virtual house in which you could go to different rooms and open various programs
+and utilities.
 [Skeuomorphism](https://www.interaction-design.org/literature/topics/skeuomorphism)
 at its finest.
 

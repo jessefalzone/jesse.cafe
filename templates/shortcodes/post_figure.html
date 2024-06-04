@@ -3,7 +3,7 @@
 {% else %}
   {% set thePath = page.components | concat(with = path) | join(sep = "/") %}
 {% endif %}
-{% set thumb = resize_image(path=thePath, width=400, height=10, op="fit_width",
+{% set thumb = resize_image(path=thePath, width=450, height=10, op="fit_width",
 format="webp", quality=50) %}
 {% set image = resize_image(path=thePath, width=5000, height=5000, op="fit") %}
 <figure class="post-figure">
@@ -13,6 +13,7 @@ format="webp", quality=50) %}
          title="{{ caption }}"
          width="{{ thumb.width }}"
          height="{{ thumb.height }}"
+         {% if class %}class="{{ class }}"{% endif %}
          loading="lazy" />
   </a>
   <br>
