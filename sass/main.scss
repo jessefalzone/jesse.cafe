@@ -5,12 +5,13 @@
   --line-height: 1.5;
   --font-family-mono: Menlo, Courier, monospace;
   --purple: #7811ed;
+  --light-purple: #cba6ff;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     --background-color: #282a36;
-    --purple: #cba6ff;
+    --purple: var(--light-purple);
     --font-color: #f8f8f2;
   }
   a:hover {
@@ -102,5 +103,31 @@ blockquote {
   cite {
     display: inline;
     font-size: smaller;
+  }
+}
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+
+  &[data-linenos] {
+    padding: 1rem 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    td {
+      padding: 0;
+      &:nth-of-type(1) {
+        text-align: center;
+        user-select: none;
+        color: var(--light-purple);
+      }
+    }
+  }
+  mark {
+    display: block;
+    background-color: #44475a;
+    color: inherit;
   }
 }

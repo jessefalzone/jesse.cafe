@@ -1,4 +1,5 @@
 base_url = "https://jesse.cafe"
+author = "Jesse Falzone"
 compile_sass = true
 build_search_index = false
 minify_html = true
@@ -13,5 +14,4 @@ highlight_code = true
 highlight_theme = "dracula"
 
 [extra]
-author = "Jesse Falzone"
 site_name = "jesse.cafe"
