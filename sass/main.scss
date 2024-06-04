@@ -1,22 +1,10 @@
-:root {
-  --background-color: #fff;
-  --font-color: #333;
-  --font-size: 1rem;
-  --line-height: 1.5;
-  --font-family-mono: Menlo, Courier, monospace;
-  --purple: #7811ed;
-  --light-purple: #cba6ff;
-}
+@use 'colors';
+@use 'fonts';
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --background-color: #282a36;
-    --purple: var(--light-purple);
-    --font-color: #f8f8f2;
-  }
-  a:hover {
-    background-color: #44475a;
-  }
+:root {
+  --background-color: #{colors.$white};
+  --font-color: #{colors.$dark-gray};
+  --purple: #{colors.$purple};
 }
 
 body {
@@ -24,9 +12,9 @@ body {
   padding: 0;
   color: var(--font-color);
   background-color: var(--background-color);
-  font-size: var(--font-size);
-  font-family: var(--font-family-mono);
-  line-height: var(--line-height);
+  font-size: fonts.$font-size;
+  font-family: fonts.$font-family-mono;
+  line-height: fonts.$line-height;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,6 +39,9 @@ a {
   align-items: center;
   padding-top: 3rem;
   margin-bottom: 1rem;
+  > a {
+    font-weight: bold;
+  }
   nav a {
     text-align: right;
     margin-left: 1rem;
@@ -129,5 +120,16 @@ pre {
     display: block;
     background-color: #44475a;
     color: inherit;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background-color: #{colors.$bluish-gray};
+    --purple: #{colors.$light-purple};
+    --font-color: #{colors.$light-gray};
+  }
+  a:hover {
+    color: colors.$bluish-gray;
   }
 }

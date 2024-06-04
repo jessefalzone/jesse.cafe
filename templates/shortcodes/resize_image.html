@@ -1,6 +1,7 @@
-{% set image = resize_image(path=path, width=width, height=height, op=op) %}
+{% set image = resize_image(path=path, width=width, height=height, op=op,
+format=format, quality=quality) %}
 <img src="{{ image.url }}"
      alt="{{ alt }}"
-     width="{{ width }}"
-     height="{{ height }}"
+     width="{{ image.width }}"
+     height="{{ image.height }}"
      loading="lazy" />
