@@ -7,7 +7,7 @@
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:type" content="profile">
-  <meta property="og:image" content="/favicon.png">
+  {% if page.extra.image %}<meta property="og:image" content="{{ page.extra.image }}">{% endif %}
 {% endblock meta %}
 {% block title %}
   Jesse Falzone - {{ page.title }}

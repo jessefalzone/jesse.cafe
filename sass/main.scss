@@ -98,10 +98,10 @@ blockquote {
   }
 }
 
-pre {
+pre[data-lang] {
   padding: 1rem;
   overflow: auto;
-
+  border: 1px solid colors.$gray;
   &[data-linenos] {
     padding: 1rem 0;
   }
@@ -113,13 +113,11 @@ pre {
       &:nth-of-type(1) {
         text-align: center;
         user-select: none;
-        color: colors.$light-purple;
       }
     }
   }
   mark {
     display: block;
-    background-color: #44475a;
     color: inherit;
   }
 }
