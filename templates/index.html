@@ -1,22 +1,27 @@
+{% set section_or_page = section | default(value = page | default(value = config)) -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="{{ config.author }}">
+    <meta name="apple-mobile-web-app-title" content="jesse.cafe">
+    <meta name="application-name" content="jesse.cafe">
     {% block meta %}
-      <meta name="description" content="{{ section.description }}">
+      <meta name="description" content="{{ section_or_page.description }}">
       <meta property="og:site_name" content="{{ config.extra.site_name }}">
       <meta property="og:locale" content="en-us">
-      <meta property="og:url" content="{{ section.permalink }}">
-      <meta property="og:title" content="{{ section.title }}">
-      <meta property="og:description" content="{{ section.description }}">
-      <meta property="og:type" content="website">
+      <meta property="og:url" content="{{ section_or_page.permalink }}">
+      <meta property="og:title" content="{{ section_or_page.title }}">
+      <meta property="og:description" content="{{ section_or_page.description }}">
       <meta property="og:image" content="/apple-touch-icon.png">
     {% endblock meta %}
+    {% block metatype %}
+      <meta property="og:type" content="website">
+    {% endblock metatype %}
     <title>
       {% block title %}
-        Jesse Falzone - {{ section.title }}
+        Jesse Falzone - {{ section_or_page.title }}
       {% endblock title %}
     </title>
     <link rel="alternate"
@@ -28,15 +33,13 @@
     <link rel="icon" href="/icon.svg?v=2" sizes="any" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
     <link rel="manifest" href="/site.webmanifest?v=2" />
-    <meta name="apple-mobile-web-app-title" content="jesse.cafe">
-    <meta name="application-name" content="jesse.cafe">
     {% block links %}
-      <link rel="canonical" href="{{ section.permalink }}" />
+      <link rel="canonical" href="{{ section_or_page.permalink }}" />
     {% endblock links %}
   </head>
   <body>
     <div id="wrapper">
-      {% include "header.html" %}
+      {% include "bits/header.html" %}
       <hr />
       {% block content %}
         <main>
@@ -44,7 +47,7 @@
         </main>
       {% endblock content %}
       <hr />
-      {% include "footer.html" %}
+      {% include "bits/footer.html" %}
     </div>
   </body>
 </html>

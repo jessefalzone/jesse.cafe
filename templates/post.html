@@ -1,15 +1,8 @@
 {% extends "page.html" %}
 {% import "macros/post-subheader.html" as subheader %}
-{% block meta %}
-  <meta name="description" content="{{ page.description }}">
-  <meta property="og:site_name" content="{{ config.extra.site_name }}">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:url" content="{{ page.permalink }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+{% block metatype %}
   <meta property="og:type" content="article">
-  <meta property="og:image" content="/apple-touch-icon.png">
-{% endblock meta %}
+{% endblock metatype %}
 {% block content %}
   <main>
     <a href="/blog">All Posts</a>
