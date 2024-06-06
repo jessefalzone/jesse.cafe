@@ -3,7 +3,7 @@ title = "About"
 description = "About me."
 +++
 
-{{ resize_image(path="/avatar.jpeg", alt="A picture of me.", width=200,
+{{ resize_image(path="/static_images/avatar.jpeg", alt="A picture of me.", width=200,
 height=200, op="scale", format="webp", quality=50) }}
 
 ## Work Stuff
