@@ -1,6 +1,16 @@
 {% import "macros/post-list.html" as postList %}
 {% extends "index.html" %}
 {% block meta %}
+  <meta name="description"
+        content="Gee dang it! The page you're looking for doesn't exist.">
+  <meta property="og:site_name" content="{{ config.extra.site_name }}">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:url" content="{{ config.base_url }}">
+  <meta property="og:title" content="404 Not Found">
+  <meta property="og:description"
+        content="Gee dang it! The page you're looking for doesn't exist.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/apple-touch-icon.png">
 {% endblock meta %}
 {% block title %}
   Jesse Falzone - 404

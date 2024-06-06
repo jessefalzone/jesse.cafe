@@ -6,17 +6,15 @@
   <meta property="og:url" content="{{ page.permalink }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:type" content="profile">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="/apple-touch-icon.png">
 {% endblock meta %}
 {% block title %}
   Jesse Falzone - {{ page.title }}
 {% endblock title %}
-{# Override base links to use page-specific ones. #}
 {% block links %}
   <link rel="canonical" href="{{ page.permalink }}" />
 {% endblock links %}
-{# Override base content to use page-specific content. #}
 {% block content %}
   <main>
     <header>

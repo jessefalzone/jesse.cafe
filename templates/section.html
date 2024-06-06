@@ -6,17 +6,15 @@
   <meta property="og:url" content="{{ section.permalink }}">
   <meta property="og:title" content="{{ section.title }}">
   <meta property="og:description" content="{{ section.description }}">
-  <meta property="og:type" content="profile">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="/apple-touch-icon.png">
 {% endblock meta %}
 {% block title %}
   {{ section.title }}
 {% endblock title %}
-{# Override base links to use section-specific ones. #}
 {% block links %}
   <link rel="canonical" href="{{ section.permalink }}">
 {% endblock links %}
-{# Override base content to use section-specific content. #}
 {% block content %}
   <main>
     <header>
