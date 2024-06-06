@@ -3,6 +3,6 @@ title = "Contact"
 description = "Contact me."
 +++
 
-- [E-mail](mailto:talkers_crumple00@icloud.com)
+- E-mail: [jesse@jesse.cafe](mailto:jesse@jesse.cafe)
 - [LinkedIn](https://www.linkedin.com/in/jessefalzone/)
 - [GitHub](https://github.com/jessefalzone)
