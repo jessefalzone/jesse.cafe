@@ -1,14 +1,11 @@
 +++
 title = "Windows 95 Icons and SVGs"
-date = 2024-06-04
+date = 2024-06-06
 draft = false
-description = "A dive into Windows 95 icons, ICO files, and SVGs.  Also showcasing a tool to convert ICOs to SVGs on the command line."
+description = "A dive into Windows 95 icons, ICO files, SVGs, and a tool I made to convert ICOs to SVGs on the command line."
 
 [taxonomies]
-tags = ['windows 95', 'icons', 'ico', 'svg']
-
-[extra]
-image = "/static_images/my-computer-0.png"
+tags = ['ico', 'icons', 'svg', 'windows 95']
 +++
 
 <style>
@@ -18,43 +15,8 @@ image = "/static_images/my-computer-0.png"
 }
 </style>
 
-<img src="/static_images/drawing-figures.svg" class="img--plain"
-width="64" height="64" alt="A painting icon." loading="lazy">
-<img src="/static_images/mouse.svg" class="img--plain"
-width="64" height="64" alt="A computer mouse icon." loading="lazy">
-<img src="/static_images/notepad.svg" class="img--plain"
-width="64" height="64" alt="A notepad icon." loading="lazy">
-
 (TL;DR; I made [a tool](https://github.com/jessefalzone/ico-to-svg) to batch
 convert ICO icons to SVGs.)
-
-Recently I re-discovered the beauty (no, that's not sarcasm) of Windows 95
-icons. I enjoy the simplicity of their styling, which was somewhat necessitated
-by the fact that icons in
-[Win32](https://en.wikipedia.org/wiki/Windows_API#Major_versions) generally had
-8-bit color depth (256 colors) and a resolution of 48, 32, or 16 pixels square.
-I'm sure it was a challenge in some cases to convey what was needed on such a
-small canvas.
-
-As an exercise I wanted to convert the icons to Scalable Vector Graphics (SVG)
-because infinitely scalable images are cool. At first I used
-[GIMP](https://www.gimp.org/) and [Inkscape](https://inkscape.org/) with varying
-degrees of success. Those are great programs but it was mostly a manual
-operation and their command-line tools didn't support every feature I needed.
-Plus, I wanted to process over 600 icons so it would have to be scripted.
-
-Before we move on, let's talk about icons and SVGs.
-
-## WTF is ICO?
-
-ICO is a pretty cool format that can contain multiple icon images (in this case
-Windows BMPs) with different resolutions and color depths. In Windows 95 the
-icon variants had different purposes and were used in different places; a large
-variant on the desktop, a small variant in a window title bar, etc.
-
-Looking for some light reading? Microsoft still serves [the original ICO
-docs](<https://learn.microsoft.com/en-us/previous-versions/ms997538(v=msdn.10)#whats-in-an-icon>)
-from 1995.
 
 {{ post_figure(
   path="my-computer-desktop.png",
@@ -62,9 +24,40 @@ from 1995.
   alt="The Windows 95 desktop showing various icon sizes."
 ) }}
 
-As an example, let's take a look at the "My Computer" icon more closely. I used
+Recently I re-discovered the beauty (no, that's not sarcasm) of Windows 95
+icons. I enjoy the simplicity of their styling which, I assume, was somewhat
+necessitated by the fact that icons in
+[Win32](https://en.wikipedia.org/wiki/Windows_API#Major_versions) generally had
+8-bit color depth (256 colors) and a resolution of 48, 32, or 16 pixels square.
+I'm sure it was a challenge in some cases to convey what was needed on such a
+small canvas.
+
+To see more detail in the icons I set out to convert them to Scalable Vector
+Graphics (SVG). As the name implies, SVGs are infinitely scalable with no
+quality loss. At first I used [GIMP](https://www.gimp.org/) and
+[Inkscape](https://inkscape.org/) with varying degrees of success. Those are
+great programs but it was mostly a manual operation and I wanted to process over
+600 icons. They both have command-line tools, but I found them pretty
+unapproachable and not super fun to use.
+
+I'd need to script my own solution! But before I get to that, let's talk about
+icons and SVGs.
+
+## An ICO Primer
+
+Looking for some light reading? Microsoft still serves [the original ICO
+docs](<https://learn.microsoft.com/en-us/previous-versions/ms997538(v=msdn.10)#whats-in-an-icon>)
+from 1995.
+
+ICO is a pretty cool format that can contain multiple icon images (in this case
+Windows BMPs) with different resolutions and color depths. In Windows 95 the
+icon variants had different purposes and were used in different places; a large
+variant on the desktop, a small variant in a window title bar, etc.
+
+Take the "My Computer" icon for example. I used
 [ImageMagick](https://imagemagick.org/script/convert.php)'s `convert` tool to
-extract each variant from the ICO file and spit out a couple PNGs.
+extract each variant from the ICO file and spit out a couple PNGs. This command
+will create a new image from each layer.
 
 ```bash
 # Note: your command might be different.
@@ -122,7 +115,7 @@ Nice and crisp. Zoom in your browser window and you'll see the image will never
 get blurry. Notice that the smaller variant isn't just a scaled down version of
 the larger one -- it's missing some details! That's pretty neat.
 
-# WTF is SVG?
+# SVGs are Pretty Rad
 
 I suppose I could stop there but the goal was to end up with SVGs. As mentioned
 above, SVG stands for Scalable Vector Graphics. As opposed to raster images that
@@ -138,7 +131,7 @@ There are several benefits:
 - Their file sizes are usually smaller than their image counterparts and the
   file size stays the same even if you increase the size of the image.
 
-A simple example:
+A simple example...
 
 ```xml
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +139,7 @@ A simple example:
 </svg>
 ```
 
-That generates a pretty sweet circle:
+...that generates a nice circle:
 
 <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <circle cx="50" cy="50" r="50" fill="#008080" />
@@ -154,12 +147,12 @@ That generates a pretty sweet circle:
 
 # Scripting the Conversion
 
-Back to ICO -> SVG conversion. I wrote a quick Node.js script to batch process
-the icons. The requirements were as follows:
+Back to the ICO -> SVG conversion. I wrote a quick Node.js script to batch
+process the icons. My requirements were as follows:
 
 1. Accept an ICO file and/or a directory as an argument.
 1. If a directory was specified, recursively search that directory for ICOs.
-1. Deconstruct each image variant from each ICO.
+1. Deconstruct each ICO into its icon variants.
 1. Convert each variant to a pixel-perfect SVG.
 1. Save SVGs to the specified directory.
 
@@ -170,8 +163,7 @@ support an alpha channel for transparency. Then I fed that into
 [pixel-perfect-svg](https://www.npmjs.com/package/pixel-perfect-svg) to extract
 pixels from the PNG buffer and convert them to vectors.
 
-I haven't published it to NPM yet but maybe soon -- I'll need to add tests
-first. Head over to the [GitHub
+I haven't published it to NPM yet, but for now head over to the [GitHub
 repo](https://github.com/jessefalzone/ico-to-svg) to get the code.
 
 # The Result
@@ -181,5 +173,6 @@ width="128" height="128" alt="A large SVG My Computer icon." loading="lazy">
 <img src="/static_images/my-computer-1.svg" class="img--plain"
 width="64" height="64" alt="A small SVG My Computer icon." loading="lazy">
 
-Boom! Stay tuned for a future post showcasing my favorite icons and ones that I
-find curious.
+Boom! This was a fun little project. Yes they look the same as the PNG without
+interpolation, but now I don't need extra CSS to maintain the pixelated effect.
+I can properly zoom in and appreciate each pixel. Stay tuned for more on that.
