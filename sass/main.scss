@@ -13,7 +13,7 @@ body {
   color: var(--font-color);
   background-color: var(--background-color);
   font-size: fonts.$font-size;
-  font-family: fonts.$font-family-mono;
+  font-family: fonts.$font-family;
   line-height: fonts.$line-height;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -99,6 +99,16 @@ blockquote {
   }
 }
 
+code {
+  font-family: fonts.$font-family-mono;
+  // Inline code.
+  &:not([data-lang]) {
+    color: #000;
+    background-color: colors.$medium-gray;
+    padding: 2px;
+  }
+}
+
 pre[data-lang] {
   padding: 1rem;
   overflow: auto;
@@ -131,5 +141,10 @@ pre[data-lang] {
   }
   a:hover {
     color: colors.$bluish-gray;
+  }
+  // Inline code.
+  code:not([data-lang]) {
+    color: colors.$light-gray;
+    background-color: colors.$gray;
   }
 }
