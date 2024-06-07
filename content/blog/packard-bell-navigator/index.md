@@ -58,7 +58,8 @@ Just look at this mustard monstrosity:
   caption="Microsoft Bob's living room.",
   alt="Microsoft Bob's living room",
   cite="K. Latham",
-  citelink="https://www.flickr.com/photos/programwitch/248234802"
+  citelink="https://www.flickr.com/photos/programwitch/248234802",
+  lazy=true
 ) }}
 
 Microsoft, with all its anti-competitive prowess, apparently forced Packard Bell
