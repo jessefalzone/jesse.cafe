@@ -33,15 +33,16 @@ a {
   }
 }
 
+.font--bold {
+  font-weight: bold;
+}
+
 #nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 3rem;
   margin-bottom: 1rem;
-  > a {
-    font-weight: bold;
-  }
   nav a {
     text-align: right;
     margin-left: 1rem;
