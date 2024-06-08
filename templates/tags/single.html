@@ -16,6 +16,13 @@
 {% block links %}
   <link rel="canonical" href="{{ current_url }}">
 {% endblock links %}
+{% block rss %}
+  {% set rss_path = "tags/" ~ term.name ~ "/atom.xml" %}
+  <link rel="alternate"
+        type="application/atom+xml"
+        title="RSS feed for {{ term.name }}"
+        href="{{ get_url(path=rss_path) }}">
+{% endblock rss %}
 {% block content %}
   <main id="content">
     <header>

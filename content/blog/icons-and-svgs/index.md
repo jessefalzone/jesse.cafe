@@ -5,7 +5,7 @@ draft = false
 description = "A dive into Windows 95 icons, ICO files, SVGs, and a tool I made to convert ICOs to SVGs on the command line."
 
 [taxonomies]
-tags = ['ico', 'icons', 'svg', 'windows 95']
+tags = ['ico', 'icons', 'svg', 'windows95']
 +++
 
 <style>

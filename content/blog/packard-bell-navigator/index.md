@@ -5,7 +5,7 @@ draft = false
 description = "Fondly remembering Packard Bell Navigator, an alternative UI for Windows."
 
 [taxonomies]
-tags = ['skeuomorphism', 'ui', 'windows 95']
+tags = ['skeuomorphism', 'ui', 'windows95']
 +++
 
 Although I've been trying to avoid OpenAI lately, I asked ChatGPT to help

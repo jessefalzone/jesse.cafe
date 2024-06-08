@@ -6,7 +6,7 @@ minify_html = true
 generate_feed = true
 ignored_content = ["*.{jpg,jpeg,png,gif}"]
 taxonomies = [
-  { name = "tags", feed = false },
+  { name = "tags", feed = true },
 ]
 
 [markdown]

@@ -24,10 +24,12 @@
         Jesse Falzone - {{ section_or_page.title }}
       {% endblock title %}
     </title>
-    <link rel="alternate"
-          type="application/atom+xml"
-          title="RSS feed for jesse.cafe"
-          href="{{ get_url(path=config.feed_filename) | safe }}" />
+    {% block rss %}
+      <link rel="alternate"
+            type="application/atom+xml"
+            title="RSS feed for jesse.cafe"
+            href="{{ get_url(path=config.feed_filename) | safe }}" />
+    {% endblock rss %}
     <link rel="stylesheet" href="{{ get_url(path="/main.css", cachebust=true) }}" />
     <link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
     <link rel="icon" href="/icon.svg?v=2" sizes="any" type="image/svg+xml">
