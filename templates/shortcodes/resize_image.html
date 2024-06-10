@@ -3,4 +3,5 @@ format=format, quality=quality) %}
 <img src="{{ image.url }}"
      alt="{{ alt }}"
      width="{{ image.width }}"
-     height="{{ image.height }}" />
+     height="{{ image.height }}"
+     {% if class %}class="{{ class }}"{% endif %} />

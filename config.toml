@@ -9,9 +9,14 @@ taxonomies = [
   { name = "tags", feed = true },
 ]
 
+[link_checker]
+skip_prefixes = [
+    "https://www.linkedin.com",
+    "https://radar.cloudflare.com"
+]
+
 [markdown]
-highlight_code = true
-highlight_theme = "dracula"
+highlight_code = false
 
 [extra]
 site_name = "jesse.cafe"

@@ -7,7 +7,8 @@
   --link-hover-color: white;
   --purple: #{colors.$purple};
   --code-color: black;
-  --code-background-color: #{colors.$medium-gray};
+  --code-background-color: #{colors.$light-gray};
+  --code-highlight-background: #{colors.$light-bluish-gray};
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 
 a {
   color: var(--purple);
-  &:hover {
+  &:not(:has(img)):hover {
     color: var(--link-hover-color);
     background-color: var(--purple);
   }
@@ -69,7 +70,7 @@ footer {
   }
 }
 
-img:not(.img--plain) {
+.img--shadow {
   box-shadow: 4px 4px 0px 1px var(--purple);
 }
 
@@ -84,6 +85,7 @@ blockquote {
     display: inline-block;
   }
   img {
+    @extend .img--shadow;
     max-width: 100%;
     height: auto;
     &:hover {
@@ -98,14 +100,16 @@ blockquote {
   }
 }
 
-code {
+code,
+pre[data-lang] {
+  color: var(--code-color);
+  background-color: var(--code-background-color);
   font-family: fonts.$font-family-mono;
-  // Inline code.
-  &:not([data-lang]) {
-    color: var(--code-color);
-    background-color: var(--code-background-color);
-    padding: 2px;
-  }
+}
+
+// Inline code.
+code:not([data-lang]) {
+  padding: 2px;
 }
 
 pre[data-lang] {
@@ -129,6 +133,7 @@ pre[data-lang] {
   mark {
     display: block;
     color: inherit;
+    background-color: var(--code-highlight-background);
   }
 }
 
@@ -140,5 +145,6 @@ pre[data-lang] {
     --purple: #{colors.$light-purple};
     --code-color: #{colors.$light-gray};
     --code-background-color: #{colors.$gray};
+    --code-highlight-background: #{colors.$bluish-gray};
   }
 }

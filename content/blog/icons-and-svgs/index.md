@@ -67,10 +67,10 @@ convert my_computer.ico my_computer.png
 
 Now we have two PNG images (enlarged 4x to show detail):
 
-<img src="/static_images/my-computer-0.png" class="img--plain" width="128"
-height="128" alt="A large, blurry My Computer icon." loading="lazy">
-<img src="/static_images/my-computer-1.png" class="img--plain" width="64"
-height="64" alt="A small, blurry My Computer icon." loading="lazy">
+<img src="/static_images/my-computer-0.png" width="128" height="128" alt="A
+large, blurry My Computer icon." loading="lazy"> <img
+src="/static_images/my-computer-1.png" width="64" height="64" alt="A small,
+blurry My Computer icon." loading="lazy">
 
 # Rasterization and Interpolation
 
@@ -106,10 +106,10 @@ property:
 This should look much better now, assuming you're using a browser from this
 decade.
 
-<img src="/static_images/my-computer-0.png" class="img--plain pixelated"
-width="128" height="128" alt="A large My Computer icon." loading="lazy">
-<img src="/static_images/my-computer-1.png" class="img--plain pixelated"
-width="64" height="64" alt="A small My Computer icon." loading="lazy">
+<img src="/static_images/my-computer-0.png" class="pixelated" width="128"
+height="128" alt="A large My Computer icon." loading="lazy"> <img
+src="/static_images/my-computer-1.png" class="pixelated" width="64" height="64"
+alt="A small My Computer icon." loading="lazy">
 
 Nice and crisp. Zoom in your browser window and you'll see the image will never
 get blurry. Notice that the smaller variant isn't just a scaled down version of
@@ -133,7 +133,7 @@ There are several benefits:
 
 A simple example...
 
-```xml
+```html
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <circle cx="50" cy="50" r="50" fill="#008080" />
 </svg>
@@ -168,10 +168,10 @@ repo](https://github.com/jessefalzone/ico-to-svg) to get the code.
 
 # The Result
 
-<img src="/static_images/my-computer-0.svg" class="img--plain"
-width="128" height="128" alt="A large SVG My Computer icon." loading="lazy">
-<img src="/static_images/my-computer-1.svg" class="img--plain"
-width="64" height="64" alt="A small SVG My Computer icon." loading="lazy">
+<img src="/static_images/my-computer-0.svg" width="128" height="128" alt="A
+large SVG My Computer icon." loading="lazy"> <img
+src="/static_images/my-computer-1.svg" width="64" height="64" alt="A small SVG
+My Computer icon." loading="lazy">
 
 Boom! This was a fun little project. Yes they look the same as the PNG without
 interpolation, but now I don't need extra CSS to maintain the pixelated effect.
