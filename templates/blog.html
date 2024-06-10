@@ -4,12 +4,11 @@
   <main id="content">
     <header>
       <h1>Blog</h1>
-      {% set taxonomy = get_taxonomy(kind="tags") %}
-      {% if taxonomy.items | length > 0 %}
-        <p>
-          <a href="/tags">All Tags</a>
-        </p>
-      {% endif %}
+      <p>
+        <a href="/tags">All Tags</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ get_url(path="atom.xml") }}">RSS feed</a>
+      </p>
     </header>
     {{ postList::meta(pages=section.pages) }}
   </main>
