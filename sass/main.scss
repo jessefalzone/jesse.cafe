@@ -2,7 +2,7 @@
 @use 'fonts';
 
 :root {
-  --background-color: #{colors.$white};
+  --background-color: white;
   --font-color: #{colors.$dark-gray};
   --link-hover-color: white;
   --purple: #{colors.$purple};
@@ -31,6 +31,12 @@ a {
   &:not(:has(img)):hover {
     color: var(--link-hover-color);
     background-color: var(--purple);
+    > code {
+      background-color: inherit;
+    }
+  }
+  > code {
+    color: inherit;
   }
 }
 
@@ -72,6 +78,7 @@ footer {
 
 .img--shadow {
   box-shadow: 4px 4px 0px 1px var(--purple);
+  border: 1px solid var(--purple);
 }
 
 blockquote {
@@ -79,8 +86,18 @@ blockquote {
   padding-left: 20px;
 }
 
+.indent-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(auto, 700px) minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  .post-figure {
+    grid-column: 2;
+    margin: 25px 0;
+  }
+}
+
 .post-figure {
-  margin: 40px;
   a {
     display: inline-block;
   }
@@ -112,10 +129,10 @@ code:not([data-lang]) {
   padding: 2px;
 }
 
+// Code blocks.
 pre[data-lang] {
   padding: 1rem;
   overflow: auto;
-  border: 1px solid colors.$gray;
   &[data-linenos] {
     padding: 1rem 0;
   }
@@ -135,6 +152,23 @@ pre[data-lang] {
     color: inherit;
     background-color: var(--code-highlight-background);
   }
+}
+
+$details-padding: 15px;
+
+article > details {
+  border: 1px dashed var(--purple);
+  padding: 0 $details-padding;
+  > summary {
+    padding: $details-padding 0;
+    cursor: pointer;
+  }
+}
+
+// Full-width code blocks.
+figure:has(pre[data-lang]) {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (prefers-color-scheme: dark) {
