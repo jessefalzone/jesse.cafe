@@ -156,7 +156,7 @@ pre[data-lang] {
 
 $details-padding: 15px;
 
-article > details {
+details {
   border: 1px dashed var(--purple);
   padding: 0 $details-padding;
   > summary {

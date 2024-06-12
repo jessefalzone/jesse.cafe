@@ -6,7 +6,6 @@ description = "About me and jesse.cafe."
 Howdy. On this page you can learn a bit more about me and how I've configured
 jesse.cafe.
 
-Jump to:
 {{ toc() }}
 
 ## About Me
