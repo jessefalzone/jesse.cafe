@@ -6,24 +6,28 @@
 {% set thumb = resize_image(path=thePath, width=450, height=10, op="fit_width",
 format="webp", quality=50) %}
 {% set image = resize_image(path=thePath, width=5000, height=5000, op="fit") %}
-<figure class="post-figure">
-  <a href="{{ image.url }}">
-    <img src="{{ thumb.url }}"
-         alt="{{ alt }}"
-         title="{{ caption }}"
-         width="{{ thumb.width }}"
-         height="{{ thumb.height }}"
-         {% if class %}class="{{ class }}"{% endif %}
-         {% if lazy %}loading="lazy"{% endif %} />
-  </a>
-  <br>
-  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
-  <br>
-  {% if cite %}
-    {% if citelink %}
-      <cite>Credit: <a href="{{ citelink }}">{{ cite }}</a></cite>
-    {% else %}
-      <cite>Credit: {{ cite }}</cite>
+<div class="indent-wrapper">
+  <figure class="post-figure">
+    <a href="{{ image.url }}">
+      <img src="{{ thumb.url }}"
+           alt="{{ alt }}"
+           title="{{ caption }}"
+           width="{{ thumb.width }}"
+           height="{{ thumb.height }}"
+           {% if class %}class="{{ class }}"{% endif %}
+           {% if lazy %}loading="lazy"{% endif %} />
+    </a>
+    {% if caption %}
+      <br>
+      <figcaption>{{ caption }}</figcaption>
     {% endif %}
-  {% endif %}
-</figure>
+    {% if cite %}
+      <br>
+      {% if citelink %}
+        <cite>Credit: <a href="{{ citelink }}">{{ cite }}</a></cite>
+      {% else %}
+        <cite>Credit: {{ cite }}</cite>
+      {% endif %}
+    {% endif %}
+  </figure>
+</div>
