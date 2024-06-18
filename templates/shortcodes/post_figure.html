@@ -3,7 +3,7 @@
 {% else %}
   {% set thePath = page.components | concat(with = path) | join(sep = "/") %}
 {% endif %}
-{% set thumb = resize_image(path=thePath, width=450, height=10, op="fit_width",
+{% set thumb = resize_image(path=thePath, width=450, height=600, op="fit",
 format="webp", quality=50) %}
 {% set image = resize_image(path=thePath, width=5000, height=5000, op="fit") %}
 <div class="indent-wrapper">
