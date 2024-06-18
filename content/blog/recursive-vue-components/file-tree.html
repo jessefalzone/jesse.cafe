@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Jesse Falzone - File Tree</title>
+    <style>
+body {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva,
+    'Gill Sans Nova', Verdana, Ubuntu, system-ui, sans-serif;
+}
+.node[data-v-c39523d3] {
+  margin-left: 3px;
+  padding-left: 20px;
+  border-left: 1px dotted black;
+  line-height: 2rem;
+}
+.node .label[data-v-c39523d3] {
+  margin-left: 3px;
+}
+.node .icon[data-v-c39523d3] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: text-bottom;
+}
+.node > summary[data-v-c39523d3] {
+  cursor: pointer;
+}
+.node > summary[data-v-c39523d3]:hover {
+  color: purple;
+}
+.node > summary .icon[data-v-c39523d3] {
+  background-image: url('./folder.ico');
+}
+.node[open] > summary .icon[data-v-c39523d3] {
+  background-image: url('./open-folder.ico');
+}
+.node.leaf .icon[data-v-c39523d3] {
+  background-image: url('./document.ico');
+}
+.branch[data-v-c39523d3],
+.leaf[data-v-c39523d3] {
+  box-sizing: border-box;
+  outline: none;
+}
+.branch:focus .label[data-v-c39523d3],
+.leaf:focus .label[data-v-c39523d3] {
+  border: 1px dotted black;
+}
+.tree > .node[data-v-c39523d3] {
+  border-left: none;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="tree">
+      <details data-v-c39523d3="" class="node" open="">
+        <summary data-v-c39523d3="" class="branch">
+          <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">CourageouslyBlahWarped</span>
+        </summary>
+        <details data-v-c39523d3="" class="node" open="">
+          <summary data-v-c39523d3="" class="branch">
+            <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">TelescreenMidst</span>
+          </summary>
+          <details data-v-c39523d3="" class="node" open="">
+            <summary data-v-c39523d3="" class="branch">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">UnderneathFlicker</span>
+            </summary>
+            <div data-v-c39523d3="" class="node leaf" tabindex="0">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">veil.vsw</span>
+            </div>
+            <details data-v-c39523d3="" class="node" open="">
+              <summary data-v-c39523d3="" class="branch">
+                <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">UghBusily</span>
+              </summary>
+              <details data-v-c39523d3="" class="node" open="">
+                <summary data-v-c39523d3="" class="branch">
+                  <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">PatternQueasilyBath</span>
+                </summary>
+                <div data-v-c39523d3="" class="node leaf" tabindex="0">
+                  <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">defoliate_merrily.css</span>
+                </div>
+              </details>
+            </details>
+            <div data-v-c39523d3="" class="node leaf" tabindex="0">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">brightly_following.xls</span>
+            </div>
+            <div data-v-c39523d3="" class="node leaf" tabindex="0">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">gymnastics_awful.mpe</span>
+            </div>
+          </details>
+          <details data-v-c39523d3="" class="node" open="">
+            <summary data-v-c39523d3="" class="branch">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">AckWarmhearted</span>
+            </summary>
+            <div data-v-c39523d3="" class="node leaf" tabindex="0">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">ensure_handmade_fairly.xlc</span>
+            </div>
+            <div data-v-c39523d3="" class="node leaf" tabindex="0">
+              <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">aboard_specific.ogx</span>
+            </div>
+          </details>
+        </details>
+      </details>
+      <div data-v-c39523d3="" class="node leaf" tabindex="0">
+        <span data-v-c39523d3="" class="icon"></span><span data-v-c39523d3="" class="label">leaf.txt</span>
+      </div>
+    </div>
+  </body>
+</html>
