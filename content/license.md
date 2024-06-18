@@ -2,6 +2,7 @@
 title = "License"
 description = "License for this site's content."
 +++
+<!-- markdownlint-disable MD033-->
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
   The content of

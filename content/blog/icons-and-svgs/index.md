@@ -5,8 +5,9 @@ draft = false
 description = "A dive into Windows 95 icons, ICO files, SVGs, and a tool I made to convert ICOs to SVGs on the command line."
 
 [taxonomies]
-tags = ['ico', 'icons', 'svg', 'windows95']
+tags = ['icons', 'projects', 'windows95']
 +++
+<!-- markdownlint-disable MD033-->
 
 (TL;DR; I made [a tool](https://github.com/jessefalzone/ico-to-svg) to batch
 convert ICO icons to SVGs.)
@@ -65,7 +66,7 @@ large, blurry My Computer icon." loading="lazy"> <img
 src="/static_images/my-computer-1.png" width="64" height="64" alt="A small,
 blurry My Computer icon." loading="lazy">
 
-# Rasterization and Interpolation
+## Rasterization and Interpolation
 
 But blast! The resulting PNGs are blurry. That's because these are [raster
 graphics](https://en.wikipedia.org/wiki/Raster_graphics) and I've upscaled them
@@ -79,7 +80,7 @@ interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation), in which
 an unknown pixel's color is determined by the weighted average of the values of
 the nearest 2x2 grid of known pixels.
 
-# CSS Image Rendering
+## CSS Image Rendering
 
 Interpolation is great for photographs but we're dealing with pixel art here.
 Can we turn off interpolation in the browser and just tell it to make the pixels
@@ -110,7 +111,7 @@ Nice and crisp. Zoom in your browser window and you'll see the image will never
 get blurry. Notice that the smaller variant isn't just a scaled down version of
 the larger one -- it's missing some details! That's pretty neat.
 
-# SVGs are Pretty Rad
+## SVGs are Pretty Rad
 
 I suppose I could stop there but the goal was to end up with SVGs. As mentioned
 above, SVG stands for Scalable Vector Graphics. As opposed to raster images that
@@ -140,7 +141,7 @@ A simple example...
   <circle cx="50" cy="50" r="50" fill="#008080" />
 </svg>
 
-# Scripting the Conversion
+## Scripting the Conversion
 
 Back to the ICO -> SVG conversion. I wrote a quick Node.js script to batch
 process the icons. My requirements were as follows:
@@ -161,7 +162,7 @@ pixels from the PNG buffer and convert them to vectors.
 I haven't published it to NPM yet, but for now head over to the [GitHub
 repo](https://github.com/jessefalzone/ico-to-svg) to get the code.
 
-# The Result
+## The Result
 
 <img src="/static_images/my-computer-0.svg" width="128" height="128" alt="A
 large SVG My Computer icon." loading="lazy"> <img

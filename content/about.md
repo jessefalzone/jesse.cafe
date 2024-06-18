@@ -85,6 +85,7 @@ The carbon footprint is low.
 - Hosted using [green
   energy](https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fjesse.cafe).
 
+<!-- markdownlint-disable-next-line MD033-->
 <img
 src="https://app.greenweb.org/api/v3/greencheckimage/jesse.cafe?nocache=true"
 alt="This website runs on green hosting - verified by thegreenwebfoundation.org"
@@ -111,6 +112,7 @@ coffee.
 
 #### Favicon
 
+<!-- markdownlint-disable-next-line MD033-->
 <img src="/icon.svg" alt="This site's favicon, a desktop icon."
 width="128" height="128">
 
