@@ -31,10 +31,12 @@ a {
   &:not(:has(img)):hover {
     color: var(--link-hover-color);
     background-color: var(--purple);
+    // Hyperlinked code will get normal link hover style.
     > code {
       background-color: inherit;
     }
   }
+  // Hyperlinked code will get normal background color.
   > code {
     color: inherit;
   }
