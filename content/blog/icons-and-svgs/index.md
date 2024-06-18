@@ -8,13 +8,6 @@ description = "A dive into Windows 95 icons, ICO files, SVGs, and a tool I made 
 tags = ['ico', 'icons', 'svg', 'windows95']
 +++
 
-<style>
-.pixelated {
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
-}
-</style>
-
 (TL;DR; I made [a tool](https://github.com/jessefalzone/ico-to-svg) to batch
 convert ICO icons to SVGs.)
 
@@ -103,13 +96,15 @@ property:
 }
 ```
 
-This should look much better now, assuming you're using a browser from this
-decade.
+These should look much better now, assuming you're using a browser from this
+decade. (They still might be blurry in RSS readers.)
 
-<img src="/static_images/my-computer-0.png" class="pixelated" width="128"
-height="128" alt="A large My Computer icon." loading="lazy"> <img
-src="/static_images/my-computer-1.png" class="pixelated" width="64" height="64"
-alt="A small My Computer icon." loading="lazy">
+<img src="/static_images/my-computer-0.png"
+style="image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;"
+width="128" height="128" alt="A large My Computer icon." loading="lazy"> <img
+src="/static_images/my-computer-1.png"
+style="image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;"
+width="64" height="64" alt="A small My Computer icon." loading="lazy">
 
 Nice and crisp. Zoom in your browser window and you'll see the image will never
 get blurry. Notice that the smaller variant isn't just a scaled down version of
