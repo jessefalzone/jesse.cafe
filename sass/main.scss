@@ -12,6 +12,7 @@
 }
 
 body {
+  font-size: 1.1rem;
   margin: 0 1rem;
   padding: 0;
   color: var(--font-color);
@@ -123,6 +124,7 @@ blockquote {
 
 code,
 pre[data-lang] {
+  font-size: 1rem;
   color: var(--code-color);
   background-color: var(--code-background-color);
   font-family: fonts.$font-family-mono;

@@ -10,8 +10,7 @@ tags = ['javascript', 'vuejs']
 
 {{ toc() }}
 
-You can build some awesome UI components by mixing recursion and
-Vue.js.
+You can build some awesome UI components by mixing recursion and Vue.js.
 
 {{ post_figure(path="treeview-1.png", alt="A file tree made with a recursive
 Vue.js component.", caption="A file tree. Each node is a recursive Vue

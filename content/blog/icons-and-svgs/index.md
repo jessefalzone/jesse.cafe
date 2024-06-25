@@ -5,8 +5,9 @@ draft = false
 description = "A dive into Windows 95 icons, ICO files, SVGs, and a tool I made to convert ICOs to SVGs on the command line."
 
 [taxonomies]
-tags = ['icons', 'projects', 'windows95']
+tags = ['icons', 'projects', 'windows']
 +++
+
 <!-- markdownlint-disable MD033-->
 
 (TL;DR; I made [a tool](https://github.com/jessefalzone/ico-to-svg) to batch
@@ -39,8 +40,8 @@ icons and SVGs.
 
 ## An ICO Primer
 
-Looking for some light reading? Microsoft still serves [the original ICO
-docs](<https://learn.microsoft.com/en-us/previous-versions/ms997538(v=msdn.10)#whats-in-an-icon>)
+Looking for some light reading? Microsoft still serves
+[the original ICO docs](<https://learn.microsoft.com/en-us/previous-versions/ms997538(v=msdn.10)#whats-in-an-icon>)
 from 1995.
 
 ICO is a pretty cool format that can contain multiple icon images (in this case
@@ -68,17 +69,17 @@ blurry My Computer icon." loading="lazy">
 
 ## Rasterization and Interpolation
 
-But blast! The resulting PNGs are blurry. That's because these are [raster
-graphics](https://en.wikipedia.org/wiki/Raster_graphics) and I've upscaled them
-to 4 times their original size. Raster graphics are basically pixels baked onto
-a grid. Those pixels get stretched apart when an image is enlarged; a browser,
-image editor, or operating system must "interpolate" or add missing pixels into
-the empty spaces to create a cohesive image.
+But blast! The resulting PNGs are blurry. That's because these are
+[raster graphics](https://en.wikipedia.org/wiki/Raster_graphics) and I've
+upscaled them to 4 times their original size. Raster graphics are basically
+pixels baked onto a grid. Those pixels get stretched apart when an image is
+enlarged; a browser, image editor, or operating system must "interpolate" or add
+missing pixels into the empty spaces to create a cohesive image.
 
-Firefox, for instance, uses a method called [bilinear
-interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation), in which
-an unknown pixel's color is determined by the weighted average of the values of
-the nearest 2x2 grid of known pixels.
+Firefox, for instance, uses a method called
+[bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation),
+in which an unknown pixel's color is determined by the weighted average of the
+values of the nearest 2x2 grid of known pixels.
 
 ## CSS Image Rendering
 
@@ -159,8 +160,8 @@ support an alpha channel for transparency. Then I fed that into
 [pixel-perfect-svg](https://www.npmjs.com/package/pixel-perfect-svg) to extract
 pixels from the PNG buffer and convert them to vectors.
 
-I haven't published it to NPM yet, but for now head over to the [GitHub
-repo](https://github.com/jessefalzone/ico-to-svg) to get the code.
+I haven't published it to NPM yet, but for now head over to the
+[GitHub repo](https://github.com/jessefalzone/ico-to-svg) to get the code.
 
 ## The Result
 

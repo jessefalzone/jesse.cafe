@@ -2,6 +2,7 @@
 title = "License"
 description = "License for this site's content."
 +++
+
 <!-- markdownlint-disable MD033-->
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
@@ -14,5 +15,5 @@ description = "License for this site's content."
   unless otherwise specified.
 </p>
 
-The code itself is available under the [MIT
-License](https://github.com/jessefalzone/jesse.cafe/blob/main/LICENSE).
+The code itself is available under the
+[MIT License](https://github.com/jessefalzone/jesse.cafe/blob/main/LICENSE).

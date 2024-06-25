@@ -40,6 +40,7 @@ title = "${title}"
 description = "${description}"
 date = ${timestamp}
 draft = true
+
 [taxonomies]
 tags = []
 +++
