@@ -10,10 +10,11 @@
     <article id="content">
       <header>
         <h1>{{ page.title }}</h1>
-        <b>{{ subheader::meta(page=page) }}</b>
+        <div class="font--bold">{{ subheader::meta(page=page) }}</div>
       </header>
       {{ page.content | replace(from="<!-- toc -->", to=toc::toc(page=page) ) | safe
       }}
+      ⁂
     </article>
   </main>
 {% endblock content %}

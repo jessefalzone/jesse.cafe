@@ -3,13 +3,15 @@
   {% if pages | length == 0 %}<p>There's nothing here yet.</p>{% endif %}
   {% for year, posts in pages | group_by(attribute="year") %}
     <h2>{{ year }}</h2>
+    <ul>
     {% for page in posts %}
-      <p>
-        <a href="{{ page.permalink }}" class="font--bold">{{ page.title }}</a>
-        {% if page.draft %}<mark>DRAFT</mark>{% endif %}
-        <br>
-        {{ subheader::meta(page=page) }}
-      </p>
-    {% endfor %}
+        <li>
+          <a href="{{ page.permalink }}" class="font--bold">{{ page.title }}</a>
+          {% if page.draft %}<mark>DRAFT</mark>{% endif %}
+          <br>
+          <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+        </li>
+        {% endfor %}
+      </ul>
   {% endfor %}
 {% endmacro meta %}

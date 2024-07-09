@@ -1,5 +1,5 @@
-@use 'colors';
-@use 'fonts';
+@use "colors";
+@use "fonts";
 
 :root {
   --background-color: white;
@@ -22,6 +22,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+// Wraps all content underneath <body>.
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
@@ -29,15 +30,21 @@ body {
 
 a {
   color: var(--purple);
-  &:not(:has(img)):hover {
-    color: var(--link-hover-color);
-    background-color: var(--purple);
+
+  &:hover {
     // Hyperlinked code will get normal link hover style.
     > code {
       background-color: inherit;
     }
   }
-  // Hyperlinked code will get normal background color.
+
+  // Links without nested images.
+  &:not(:has(img)):hover {
+    color: var(--link-hover-color);
+    background-color: var(--purple);
+  }
+
+  // Hyperlinked code will get normal link style.
   > code {
     color: inherit;
   }
@@ -45,6 +52,9 @@ a {
 
 .font--bold {
   font-weight: bold;
+}
+.font--italic {
+  font-style: italic;
 }
 
 #nav-wrapper {
@@ -59,7 +69,8 @@ a {
   }
 }
 
-main {
+main,
+footer {
   padding: 1rem 0;
 }
 
@@ -68,15 +79,6 @@ hr {
   height: 1px;
   border: none;
   padding: 0;
-}
-
-footer {
-  padding: 1rem 0;
-  pre {
-    font-family: Courier, monospace;
-    font-size: 0.8rem;
-    line-height: 1;
-  }
 }
 
 .img--shadow {
@@ -92,6 +94,7 @@ blockquote {
   }
 }
 
+// Indented figures that collapse on smaller screens.
 .indent-wrapper {
   display: flex;
   justify-content: center;
@@ -160,21 +163,32 @@ pre[data-lang] {
   }
 }
 
-$details-padding: 15px;
+// $details-padding: 15px;
 
-article > details {
-  border: 1px dashed var(--purple);
-  padding: 0 $details-padding;
-  > summary {
-    padding: $details-padding 0;
-    cursor: pointer;
-  }
-}
+// article > details {
+//   border: 1px dashed var(--purple);
+//   padding: 0 $details-padding;
+//   > summary {
+//     padding: $details-padding 0;
+//     cursor: pointer;
+//   }
+// }
 
 // Full-width code blocks.
 figure:has(pre[data-lang]) {
   margin-left: 0;
   margin-right: 0;
+}
+
+#page-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ascii-art {
+  font-size: 0.8rem;
+  line-height: 1;
 }
 
 @media (prefers-color-scheme: dark) {

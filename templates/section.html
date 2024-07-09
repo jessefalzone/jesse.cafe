@@ -1,9 +1,8 @@
 {% extends "index.html" %}
+{% import "macros/page-header.html" as pageHeader %}
 {% block content %}
   <main>
-    <header>
-      <h1>{{ section.title }}</h1>
-    </header>
+    {{ pageHeader::meta(page=section) }}
     {{ section.content | safe }}
   </main>
 {% endblock content %}

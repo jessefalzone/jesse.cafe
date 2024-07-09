@@ -1,11 +1,9 @@
 {% extends "index.html" %}
 {% import "macros/toc.html" as toc %}
+{% import "macros/page-header.html" as pageHeader %}
 {% block content %}
   <main>
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-    {{ page.content | replace(from="<!-- toc -->", to=toc::toc(page=page) ) | safe
-    }}
+    {{ pageHeader::meta(page=page) }}
+    {{ page.content | replace(from="<!-- toc -->", to=toc::toc(page=page) ) | safe }}
   </main>
 {% endblock content %}

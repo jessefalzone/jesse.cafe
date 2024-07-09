@@ -1,6 +1,9 @@
 +++
 title = "Contact"
 description = "Contact me."
+
+[extra]
+icon = "mail.svg"
 +++
 
 - E-mail: [jesse@jesse.cafe](mailto:jesse@jesse.cafe)

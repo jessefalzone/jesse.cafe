@@ -1,6 +1,9 @@
 +++
 title = "About"
 description = "About me and jesse.cafe."
+
+[extra]
+icon = "globe.svg"
 +++
 
 Howdy. On this page you can learn a bit more about me and how I've configured

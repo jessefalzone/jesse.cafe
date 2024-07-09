@@ -1,6 +1,9 @@
 +++
 title = "License"
 description = "License for this site's content."
+
+[extra]
+icon = "cert.svg"
 +++
 
 <!-- markdownlint-disable MD033-->

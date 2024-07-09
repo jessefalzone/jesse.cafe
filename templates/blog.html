@@ -1,15 +1,14 @@
 {% extends "section.html" %}
 {% import "macros/post-list.html" as postList %}
+{% import "macros/page-header.html" as pageHeader %}
 {% block content %}
-  <main id="content">
-    <header>
-      <h1>Blog</h1>
-      <p>
-        <a href="/tags">All Tags</a>
-        <span aria-hidden="true">/</span>
-        <a href="{{ get_url(path="atom.xml") }}">RSS feed</a>
-      </p>
-    </header>
+  <main>
+    {{ pageHeader::meta(page=section) }}
+    <p>
+      <a href="/tags">All Tags</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ get_url(path="atom.xml") }}">RSS feed</a>
+    </p>
     {{ postList::meta(pages=section.pages) }}
   </main>
 {% endblock content %}
