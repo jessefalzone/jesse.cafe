@@ -68,8 +68,8 @@ far.
 
 It's fast.
 
-- [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-jesse-cafe/w4vhakv0yw?form_factor=desktop)
-- [Yellow Lab Tools report](https://yellowlab.tools/result/gwxqdi0scw)
+- [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-jesse-cafe/1j5wn1gmby?form_factor=desktop)
+- [Yellow Lab Tools report](https://yellowlab.tools/result/gxx08hf40w)
 
 Most images in the blog are in WebP format at 50% quality to keep file sizes
 low. You can click on an image to see it in full quality and in the original
@@ -80,7 +80,7 @@ format.
 The carbon footprint is low.
 
 - [Website Carbon](https://www.websitecarbon.com/website/jesse-cafe/)
-- [Ecograder](https://ecograder.com/report/rWv0s51g4yZ9VbMWNV75FAcX)
+- [Ecograder](https://ecograder.com/report/CGTl09K46MiLjgldvXne10xM)
 - Hosted using
   [green energy](https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fjesse.cafe).
 
@@ -99,7 +99,7 @@ width="200px" height="95px">
 - I've added the recommended
   [security headers](https://securityheaders.com/?q=jesse.cafe&followRedirects=on).
 - It's
-  [HTTPS-only](https://radar.cloudflare.com/scan/6556cbec-1297-4a12-ad89-c75849a45ddf/technology).
+  [HTTPS-only](https://radar.cloudflare.com/scan/74f1c761-0955-4238-81de-4a4a5d615958/technology).
 
 ### Styling and Other Choices
 
