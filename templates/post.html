@@ -1,6 +1,7 @@
 {% extends "page.html" %}
 {% import "macros/post-subheader.html" as subheader %}
 {% import "macros/toc.html" as toc %}
+{% import "macros/reply.html" as reply %}
 {% block metatype %}
   <meta property="og:type" content="article">
 {% endblock metatype %}
@@ -14,7 +15,9 @@
       </header>
       {{ page.content | replace(from="<!-- toc -->", to=toc::toc(page=page) ) | safe
       }}
-      ⁂
+      <div aria-hidden="true">⁂</div>
+      <br>
+      {{ reply::meta(page=page) }}
     </article>
   </main>
 {% endblock content %}

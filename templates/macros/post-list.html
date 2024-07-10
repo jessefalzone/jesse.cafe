@@ -1,17 +1,16 @@
-{% import "macros/post-subheader.html" as subheader %}
 {% macro meta(pages) %}
   {% if pages | length == 0 %}<p>There's nothing here yet.</p>{% endif %}
   {% for year, posts in pages | group_by(attribute="year") %}
     <h2>{{ year }}</h2>
     <ul>
-    {% for page in posts %}
+      {% for page in posts %}
         <li>
           <a href="{{ page.permalink }}" class="font--bold">{{ page.title }}</a>
           {% if page.draft %}<mark>DRAFT</mark>{% endif %}
           <br>
           <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
         </li>
-        {% endfor %}
-      </ul>
+      {% endfor %}
+    </ul>
   {% endfor %}
 {% endmacro meta %}

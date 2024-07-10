@@ -1,3 +1,4 @@
+{% import "macros/recent-posts.html" as recentPosts %}
 {% set section_or_page = section | default(value = page | default(value = config)) -%}
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +49,8 @@
         <main>
           <img src="icon.svg" width="48" height="48" alt="A desktop icon.">
           {{ section.content | safe }}
+          {% set section = get_section(path="blog/_index.md") %}
+          {{ recentPosts::meta(pages=section.pages) }}
         </main>
       {% endblock content %}
       <hr />

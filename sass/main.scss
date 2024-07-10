@@ -30,6 +30,7 @@ body {
 
 a {
   color: var(--purple);
+  text-decoration: none;
 
   &:hover {
     // Hyperlinked code will get normal link hover style.
@@ -39,9 +40,12 @@ a {
   }
 
   // Links without nested images.
-  &:not(:has(img)):hover {
-    color: var(--link-hover-color);
-    background-color: var(--purple);
+  &:not(:has(img)) {
+    border-bottom: 1px dotted var(--purple);
+    &:hover {
+      color: var(--link-hover-color);
+      background-color: var(--purple);
+    }
   }
 
   // Hyperlinked code will get normal link style.
@@ -178,12 +182,6 @@ pre[data-lang] {
 figure:has(pre[data-lang]) {
   margin-left: 0;
   margin-right: 0;
-}
-
-#page-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .ascii-art {
