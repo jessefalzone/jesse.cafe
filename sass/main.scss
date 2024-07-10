@@ -2,13 +2,11 @@
 @use "fonts";
 
 :root {
-  --background-color: white;
+  --primary-color: #{colors.$purple};
+  --secondary-color: white;
   --font-color: #{colors.$dark-gray};
-  --link-hover-color: white;
-  --purple: #{colors.$purple};
   --code-color: black;
   --code-background-color: #{colors.$light-gray};
-  --code-highlight-background: #{colors.$light-bluish-gray};
 }
 
 body {
@@ -16,9 +14,11 @@ body {
   margin: 0 1rem;
   padding: 0;
   color: var(--font-color);
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   font-family: fonts.$font-family;
   line-height: fonts.$line-height;
+
+  // Prevent iOS Safari from enlarging text in landscape mode.
   -webkit-text-size-adjust: 100%;
 }
 
@@ -26,39 +26,6 @@ body {
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
-}
-
-a {
-  color: var(--purple);
-  text-decoration: none;
-
-  &:hover {
-    // Hyperlinked code will get normal link hover style.
-    > code {
-      background-color: inherit;
-    }
-  }
-
-  // Links without nested images.
-  &:not(:has(img)) {
-    border-bottom: 1px dotted var(--purple);
-    &:hover {
-      color: var(--link-hover-color);
-      background-color: var(--purple);
-    }
-  }
-
-  // Hyperlinked code will get normal link style.
-  > code {
-    color: inherit;
-  }
-}
-
-.font--bold {
-  font-weight: bold;
-}
-.font--italic {
-  font-style: italic;
 }
 
 #nav-wrapper {
@@ -78,20 +45,38 @@ footer {
   padding: 1rem 0;
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  // Links without nested images.
+  &:not(:has(img)) {
+    border-bottom: 1px dotted var(--primary-color);
+    &:hover {
+      color: var(--secondary-color);
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+.font--bold {
+  font-weight: bold;
+}
+
 hr {
-  background-color: var(--purple);
+  background-color: var(--primary-color);
   height: 1px;
   border: none;
   padding: 0;
 }
 
 .img--shadow {
-  box-shadow: 4px 4px 0px 1px var(--purple);
-  border: 1px solid var(--purple);
+  box-shadow: 4px 4px 0px 1px var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 blockquote {
-  border-left: 3px solid var(--purple);
+  border-left: 3px solid var(--primary-color);
   padding: 10px 0 10px 20px;
   > p {
     margin: 0;
@@ -110,9 +95,6 @@ blockquote {
 }
 
 .post-figure {
-  a {
-    display: inline-block;
-  }
   img {
     @extend .img--shadow;
     max-width: 100%;
@@ -131,7 +113,7 @@ blockquote {
 
 code,
 pre[data-lang] {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--code-color);
   background-color: var(--code-background-color);
   font-family: fonts.$font-family-mono;
@@ -146,42 +128,6 @@ code:not([data-lang]) {
 pre[data-lang] {
   padding: 1rem;
   overflow: auto;
-  &[data-linenos] {
-    padding: 1rem 0;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    td {
-      padding: 0;
-      &:nth-of-type(1) {
-        text-align: center;
-        user-select: none;
-      }
-    }
-  }
-  mark {
-    display: block;
-    color: inherit;
-    background-color: var(--code-highlight-background);
-  }
-}
-
-// $details-padding: 15px;
-
-// article > details {
-//   border: 1px dashed var(--purple);
-//   padding: 0 $details-padding;
-//   > summary {
-//     padding: $details-padding 0;
-//     cursor: pointer;
-//   }
-// }
-
-// Full-width code blocks.
-figure:has(pre[data-lang]) {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .ascii-art {
@@ -191,12 +137,10 @@ figure:has(pre[data-lang]) {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #{colors.$bluish-gray};
+    --primary-color: #{colors.$light-purple};
+    --secondary-color: #{colors.$bluish-gray};
     --font-color: #{colors.$light-gray};
-    --link-hover-color: #{colors.$bluish-gray};
-    --purple: #{colors.$light-purple};
     --code-color: #{colors.$light-gray};
     --code-background-color: #{colors.$gray};
-    --code-highlight-background: #{colors.$bluish-gray};
   }
 }
