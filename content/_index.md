@@ -1,6 +1,6 @@
 +++
 title = "Home"
-description = "Jesse Falzone's personal site."
+description = "Jesse's personal site."
 +++
 
 o/ Welcome!
