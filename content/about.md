@@ -49,6 +49,9 @@ them through [the 250KB Club](https://250kb.club/) and
 [the 512KB Club](https://512kb.club/). They're like-minded people who feel the
 web has become too bloated and want to prioritize performance and accessibility.
 
+[![A proud member of the green team of the 512KB Club.](/static_images/512kb-club.gif)](https://512kb.club/)
+[![A proud member of the 250KB Club.](/static_images/250kb-club.png)](https://250kb.club/jesse-cafe)
+
 ### Tech
 
 I built jesse.cafe with a Rust library called [Zola](https://getzola.org) and it
