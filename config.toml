@@ -1,12 +1,13 @@
+title = "jesse.cafe"
 base_url = "https://jesse.cafe"
 author = "Jesse Falzone"
 compile_sass = true
 build_search_index = false
-minify_html = true
-generate_feed = true
+minify_html = false
+generate_feeds = true
 ignored_content = ["*.{jpg,jpeg,png,gif}"]
 taxonomies = [
-  { name = "tags", feed = true },
+  { name = "tags" },
 ]
 
 [link_checker]
@@ -17,6 +18,9 @@ skip_prefixes = [
 
 [markdown]
 highlight_code = false
+bottom_footnotes = true
+smart_punctuation = true
+external_links_target_blank = true
 
 [extra]
 site_name = "jesse.cafe"

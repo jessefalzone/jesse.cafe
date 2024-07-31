@@ -27,13 +27,6 @@
   <main id="content">
     <header>
       <h1>Posts Tagged as "{{ term.name }}"</h1>
-      <p>
-        <a href="/blog">All Posts</a>
-        <span aria-hidden="true">/</span>
-        <a href="/tags">All Tags</a>
-        <span aria-hidden="true">/</span>
-        <a href="{{ get_url(path=rss_path) }}">RSS feed for "{{ term.name }}"</a>
-      </p>
     </header>
     {{ postList::meta(pages=term.pages) }}
   </main>

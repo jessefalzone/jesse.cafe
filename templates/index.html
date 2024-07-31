@@ -29,7 +29,7 @@
       <link rel="alternate"
             type="application/atom+xml"
             title="RSS feed for jesse.cafe"
-            href="{{ get_url(path=config.feed_filename) | safe }}" />
+            href="{{ get_url(path="atom.xml", trailing_slash=false) }}" />
     {% endblock rss %}
     <link rel="stylesheet" href="{{ get_url(path="/main.css", cachebust=true) }}" />
     <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -42,19 +42,14 @@
     {% endblock links %}
   </head>
   <body>
-    <div id="wrapper">
-      {% include "bits/header.html" %}
-      <hr />
-      {% block content %}
-        <main>
-          <img src="icon.svg" width="48" height="48" alt="A desktop icon.">
-          {{ section.content | safe }}
-          {% set section = get_section(path="blog/_index.md") %}
-          {{ recentPosts::meta(pages=section.pages) }}
-        </main>
-      {% endblock content %}
-      <hr />
-      {% include "bits/footer.html" %}
-    </div>
+    {% include "bits/header.html" %}
+    {% block content %}
+      <main>
+        {{ section.content | safe }}
+        {% set section = get_section(path="blog/_index.md") %}
+        {{ recentPosts::meta(pages=section.pages) }}
+      </main>
+    {% endblock content %}
+    {% include "bits/footer.html" %}
   </body>
 </html>

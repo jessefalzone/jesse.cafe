@@ -3,6 +3,8 @@ title = "About"
 description = "About me and jesse.cafe."
 +++
 
+<!-- markdownlint-disable MD033-->
+
 On this page you can learn a bit more about me and how I've configured
 jesse.cafe.
 
@@ -87,8 +89,6 @@ The carbon footprint is low.
 - Hosted using
   [green energy](https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fjesse.cafe).
 
-<!-- markdownlint-disable-next-line MD033-->
-
 <img
 src="https://app.greenweb.org/api/v3/greencheckimage/jesse.cafe?nocache=true"
 alt="This website runs on green hosting - verified by thegreenwebfoundation.org"
@@ -114,8 +114,6 @@ coffee.
 
 #### Favicon
 
-<!-- markdownlint-disable-next-line MD033-->
-
 <img src="/icon.svg" alt="This site's favicon, a desktop icon."
 width="128" height="128">
 
@@ -129,11 +127,9 @@ thought it was fitting.
 The color scheme is loosely based on [Dracula](https://draculatheme.com/)
 (especially dark mode). Light/dark mode follows your system preference.
 
-The
-[font stack](https://github.com/system-fonts/modern-font-stacks?tab=readme-ov-file#old-style)
-for regular text is
-`'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif`. I had
-planned to use Lucida Grande but it's not available on enough systems, and I
+The [font stack](https://modernfontstacks.com/?stack=old-style) for regular text
+is `'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif`. I
+had planned to use Lucida Grande but it's not available on enough systems, and I
 have a renewed appreciation for serif fonts. Monospace fonts are
 `ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace`.
 There are no external fonts that would slow down page load.

@@ -4,11 +4,6 @@
 {% block content %}
   <main>
     {{ pageHeader::meta(page=section) }}
-    <p>
-      <a href="/tags">All Tags</a>
-      <span aria-hidden="true">/</span>
-      <a href="{{ get_url(path="atom.xml") }}">RSS feed</a>
-    </p>
     {{ postList::meta(pages=section.pages) }}
   </main>
 {% endblock content %}

@@ -11,8 +11,9 @@
 
 body {
   font-size: 1.1rem;
-  margin: 0 1rem;
-  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
   color: var(--font-color);
   background-color: var(--secondary-color);
   font-family: fonts.$font-family;
@@ -22,21 +23,15 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-// Wraps all content underneath <body>.
-#wrapper {
-  max-width: 800px;
-  margin: 0 auto;
+nav {
+  margin-top: 3rem;
 }
 
-#nav-wrapper {
+.menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 3rem;
-  margin-bottom: 1rem;
-  nav a {
-    text-align: right;
-    margin-left: 1rem;
+  flex-flow: row wrap;
+  > a {
+    margin-right: 1rem;
   }
 }
 
@@ -133,6 +128,10 @@ pre[data-lang] {
 .ascii-art {
   font-size: 0.8rem;
   line-height: 1;
+}
+
+.footnotes-list {
+  font-style: italic;
 }
 
 @media (prefers-color-scheme: dark) {

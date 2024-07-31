@@ -1,0 +1,9 @@
+{
+  "collapseWhitespace": true,
+  "conservativeCollapse": true,
+  "removeRedundantAttributes": true,
+  "removeStyleLinkTypeAttributes": true,
+  "sortAttributes": true,
+  "sortClassName": true,
+  "useShortDoctype": true
+}
