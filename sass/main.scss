@@ -4,6 +4,7 @@
 :root {
   --primary-color: #{colors.$purple};
   --secondary-color: white;
+  --background-color: #{colors.$off-white};
   --font-color: #{colors.$dark-gray};
   --code-color: black;
   --code-background-color: #{colors.$light-gray};
@@ -15,7 +16,7 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   color: var(--font-color);
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   font-family: fonts.$font-family;
   line-height: fonts.$line-height;
 
@@ -23,11 +24,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-nav {
+header {
   margin-top: 3rem;
 }
 
-.menu {
+nav {
   display: flex;
   flex-flow: row wrap;
   > a {
@@ -126,6 +127,7 @@ pre:has(code[data-lang]) {
 }
 
 .ascii-art {
+  color: var(--primary-color);
   font-size: 0.8rem;
   line-height: 1;
 }
@@ -138,6 +140,7 @@ pre:has(code[data-lang]) {
   :root {
     --primary-color: #{colors.$light-purple};
     --secondary-color: #{colors.$bluish-gray};
+    --background-color:  #{colors.$bluish-gray};
     --font-color: #{colors.$light-gray};
     --code-color: #{colors.$light-gray};
     --code-background-color: #{colors.$gray};

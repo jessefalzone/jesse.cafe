@@ -36,7 +36,7 @@ Maybe someday I'll blog about those.
 
 ### Work Stuff
 
-I am proud to be a Senior Software Engineer at Muck Rack!
+I am a senior software engineer by day, and a sleepy person by night.
 
 ## About This Site
 
