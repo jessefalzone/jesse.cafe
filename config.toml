@@ -21,5 +21,11 @@ bottom_footnotes = true
 smart_punctuation = true
 external_links_target_blank = true
 
+[markdown.highlighting]
+error_on_missing_language = true
+style = "inline"
+light_theme = "min-light"
+dark_theme = "catppuccin-mocha"
+
 [extra]
 site_name = "jesse.cafe"

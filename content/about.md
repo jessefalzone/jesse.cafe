@@ -24,6 +24,7 @@ I'm a curious person by nature so I have lots of interests. Here are a few:
 - Various [90s aesthetics](https://www.are.na/evan-collins-1522646491/channels)
 - Semantic HTML
 - Baking bread and pizza
+- Post-modern architecture
 - Environmental protection
 - Woodworking
 - Watches
