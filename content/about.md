@@ -20,13 +20,13 @@ height=150, op="scale", format="webp", quality=50, class="img--shadow") }}
 I'm a curious person by nature so I have lots of interests. Here are a few:
 
 - 90s computing (e.g. Windows 95)
-- Traditional hand-tool woodworking
-- Semantic HTML
 - Exploring old graveyards
-- Environmental protection
-- Watches
 - Various [90s aesthetics](https://www.are.na/evan-collins-1522646491/channels)
+- Semantic HTML
 - Baking bread and pizza
+- Environmental protection
+- Woodworking
+- Watches
 - The ocean
 - [Solar power](https://solar.lowtechmagazine.com/)
 - German beer
@@ -36,11 +36,7 @@ Maybe someday I'll blog about those.
 
 ### Work Stuff
 
-- **Chief Technology Officer** @ Dapt, 2023 - 2024
-- **Director of Application Development** @ Critical Mention, 2020 - 2023
-- **Team Lead, Senior Software Engineer** @ Critical Mention, 2016 - 2020
-- **Full-Stack Software Engineer** @ Critical Mention, 2014 - 2016
-- **Software Engineer Intern** @ Logikcull, 2013
+I am proud to be a Senior Software Engineer at Muck Rack!
 
 ## About This Site
 

@@ -107,7 +107,7 @@ blockquote {
 }
 
 code,
-pre[data-lang] {
+pre:has(code[data-lang]) {
   font-size: 0.9rem;
   color: var(--code-color);
   background-color: var(--code-background-color);
@@ -120,7 +120,7 @@ code:not([data-lang]) {
 }
 
 // Code blocks.
-pre[data-lang] {
+pre:has(code[data-lang]) {
   padding: 1rem;
   overflow: auto;
 }
