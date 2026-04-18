@@ -16,7 +16,7 @@ from PIL import Image
 
 for img_path in Path("public/processed_images").rglob("*.webp"):
     img = Image.open(img_path).convert("RGB")
-    dithered = img.quantize(colors=256, dither=Image.Dither.FLOYDSTEINBERG)
+    dithered = img.quantize(colors=16, dither=Image.Dither.FLOYDSTEINBERG)
     dithered.convert("RGB").save(img_path, format="WEBP", quality=90)
     print(f"Dithered: {img_path}")
 EOF
