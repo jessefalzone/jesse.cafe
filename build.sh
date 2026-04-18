@@ -9,6 +9,7 @@ else
 fi
 
 # Dither output WebP images in place.
+pip install Pillow --quiet
 python3 << 'EOF'
 from pathlib import Path
 from PIL import Image
